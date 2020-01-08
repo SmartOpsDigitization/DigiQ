@@ -1,0 +1,22 @@
+[
+  {
+  "lineName":"line1",
+	"lineManagerName":"lm1",
+  "lineDetails":"NA"
+  },
+  {
+  "lineName":"line2",
+	"lineManagerName":"lm1",
+  "lineDetails":"NA"
+  },
+  {
+  "lineName":"line3",
+	"lineManagerName":"lm1",
+  "lineDetails":"NA"
+  },
+  {
+  "lineName":"line4",
+	"lineManagerName":"lm1",
+  "lineDetails":"NA"
+  }
+]

@@ -1,0 +1,521 @@
+[
+  {
+    "lineName": "Line1",
+    "snapshots": [
+       {
+        "snapshotName": "22-06-18",
+        "dateRefreshedOn": "22-06-18",
+        "columnNames": [
+          "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows": [
+          {
+            "rowName": "Account1",
+            "rowCellData": [
+              {
+                "color": "#2596ed",
+                "score": 30
+              },
+              {
+                "color": "#2596ed",
+                "score": 95
+              },
+              {
+                "color": "amdocs",
+                "score": 67
+              },
+              {
+                "color": "amdocs",
+                "score": 42
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+            ]
+          },
+          {
+            "rowName": "Account3",
+            "rowCellData": [
+              {
+                "color": "#69c64d",
+                "score": 30
+              },
+              {
+                "color": "#69c64d",
+                "score": 40
+              },
+              {
+                "color": "#69c64d",
+                "score": 60
+              },
+              {
+                "color": "amdocs",
+                "score": 100
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "snapshotName": "22-03-18",
+        "dateRefreshedOn": "22-03-18",
+        "columnNames": [
+          "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows": [
+          {
+            "rowName": "Account1",
+            "rowCellData": [
+              {
+                "color": "amdocs",
+                "score": 30
+              },
+              {
+                "color": "#2596ed",
+                "score": 95
+              },
+              {
+                "color": "#2596ed",
+                "score": 67
+              },
+              {
+                "color": "amdocs",
+                "score": 42
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+            ]
+          },
+          {
+            "rowName": "Account3",
+            "rowCellData": [
+              {
+                "color": "#69c64d",
+                "score": 30
+              },
+              {
+                "color": "#69c64d",
+                "score": 40
+              },
+              {
+                "color": "#69c64d",
+                "score": 60
+              },
+              {
+                "color": "amdocs",
+                "score": 100
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "snapshotName": "22-11-17",
+        "dateRefreshedOn": "22-11-17",
+        "columnNames": [
+         "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows": [
+          {
+            "rowName": "Account1",
+            "rowCellData": [
+              {
+                "color": "#2596ed",
+                "score": 45
+              },
+              {
+                "color": "#2596ed",
+                "score": 30
+              },
+              {
+                "color": "amdocs",
+                "score": 100
+              },
+              {
+                "color": "#69c64d",
+                "score": 90
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+            ]
+          },
+          {
+            "rowName": "Account3",
+            "rowCellData": [
+              {
+                "color": "#2596ed",
+                "score": 30
+              },
+              {
+                "color": "#69c64d",
+                "score": 60
+              },
+              {
+                "color": "#2596ed",
+                "score": 80
+              },
+              {
+                "color": "#69c64d",
+                "score": 30
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lineName": "Line2",
+    "snapshots": [
+      {
+        "snapshotName": "04-05-18",
+        "dateRefreshedOn": "04-05-18",
+        "columnNames": [
+         "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows": [
+          {
+            "rowName": "Account1",
+            "rowCellData": [
+              {
+                "color": "#2596ed",
+                "score": 30
+              },
+              {
+                "color": "#69c64d",
+                "score": 95
+              },
+              {
+                "color": "#2596ed",
+                "score": 67
+              },
+              {
+                "color": "amdocs",
+                "score": 42
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+            ]
+          },
+          {
+            "rowName": "Account2",
+            "rowCellData": [
+              {
+                "color": "#69c64d",
+                "score": 30
+              },
+              {
+                "color": "amdocs",
+                "score": 40
+              },
+              {
+                "color": "#69c64d",
+                "score": 60
+              },
+              {
+                "color": "amdocs",
+                "score": 100
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "snapshotName": "14-12-17",
+        "dateRefreshedOn": "14-12-17",
+        "columnNames": [
+         "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows": [
+          {
+            "rowName": "Account1",
+            "rowCellData": [
+              {
+                "color": "amdocs",
+                "score": 45
+              },
+              {
+                "color": "#2596ed",
+                "score": 30
+              },
+              {
+                "color": "amdocs",
+                "score": 100
+              },
+              {
+                "color": "#69c64d",
+                "score": 90
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+            ]
+          },
+          {
+            "rowName": "Account2",
+            "rowCellData": [
+              {
+                "color": "#69c64d",
+                "score": 30
+              },
+              {
+                "color": "#69c64d",
+                "score": 60
+              },
+              {
+                "color": "#2596ed",
+                "score": 80
+              },
+              {
+                "color": "#69c64d",
+                "score": 30
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lineName": "Line3",
+    "snapshots": [
+      {
+        "snapshotName": "19-05-18",
+        "dateRefreshedOn":"19-05-18",
+        "columnNames": [
+         "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows": [
+          {
+            "rowName": "Account2",
+            "rowCellData": [
+              {
+                "color": "#69c64d",
+                "score": 30
+              },
+              {
+                "color": "#69c64d",
+                "score": 30
+              },
+              {
+                "color": "amdocs",
+                "score": 30
+              },
+              {
+                "color": "#69c64d",
+                "score": 30
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+            ]
+          },
+          {
+            "rowName": "Account3",
+            "rowCellData": [
+              {
+                "color": "#2596ed",
+                "score": 40
+              },
+              {
+                "color": "#2596ed",
+                "score": 30
+              },
+              {
+                "color": "#69c64d",
+                "score": 30
+              },
+              {
+                "color": "#2596ed",
+                "score": 38
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "snapshotName": "01-01-18",
+        "dateRefreshedOn": "01-01-18",
+        "columnNames": [
+          "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows": [
+          {
+            "rowName": "Account2",
+            "rowCellData": [
+              {
+                "color": "amdocs",
+                "score": 30
+              },
+              {
+                "color": "#69c64d",
+                "score": 95
+              },
+              {
+                "color": "#69c64d",
+                "score": 67
+              },
+              {
+                "color": "amdocs",
+                "score": 42
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+            ]
+          },
+          {
+            "rowName": "Account3",
+            "rowCellData": [
+              {
+                "color": "#69c64d",
+                "score": 30
+              },
+              {
+                "color": "#69c64d",
+                "score": 30
+              },
+              {
+                "color": "amdocs",
+                "score": 100
+              },
+              {
+                "color": "#amdocs",
+                "score": 100
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

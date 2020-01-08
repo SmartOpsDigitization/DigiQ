@@ -1,0 +1,19 @@
+[
+    {
+        "accountName": "AT&T",
+        "accountDetails": "AT&T",
+        "lineNames": [
+            "BE","me","att"
+        ]
+    },
+    {
+        "accountName": "GLOBE",
+        "accountDetails": "GLOBE",
+        "lineNames": [ "ME"]
+    },
+    {
+        "accountName": "METRO-PCS  ",
+        "accountDetails": "METRO-PCS  ",
+        "lineNames": [ "sE"]
+    }
+]
