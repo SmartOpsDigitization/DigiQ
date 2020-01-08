@@ -1,0 +1,36 @@
+<div style="background-color: aliceblue;">
+  <app-dashboard-header [header]="header"></app-dashboard-header>
+  <div class="container">
+    <div id="datastyle">
+      <label id="accoutnamelabel">Account Name</label>
+      <input type="text" placeholder={{accountName}} disabled>
+    </div>
+    <hr>
+    <h3 class="panel-title" style="text-align: center;">Table Info</h3>
+    <table class="table table-hover  table-striped">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Team Name</th>
+          <th>Submitted By</th>
+          <th>Submitted Date</th>
+          <th>Score</th>
+          <th>View Responses</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of teamsForChecklistResponsesArray ; let y=index">
+          <td>{{y+1}}</td>
+          <td>{{i.teamName}}</td>
+          <td>{{i.spoc}}</td>
+          <td>{{i.submitDate}}</td>
+          <td>{{i.score}}/{{i.maxScore}}</td>
+          <td><button style="margin-left: 20%;" id="i.accountId" type="button" class="btn btn-info"
+              (click)="viewsubmittedresponses(i.teamId)">
+              <i class='fas fa-eye'></i></button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <app-footer></app-footer>
+</div>

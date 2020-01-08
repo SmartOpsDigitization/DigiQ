@@ -1,0 +1,37 @@
+<div style="background-color: aliceblue;">
+  <app-dashboard-header [header]='header'></app-dashboard-header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <label>Account Name</label><br>
+        <input type="text" placeholder={{accountName}} disabled>
+      </div>
+      <div class='col-lg-4'>
+        <label >Team Name</label><br>
+        <input type="text" placeholder={{teamSelectedToViewResponses.teamName}} disabled>
+      </div>
+      <div class='col-lg-4'>
+        <label >Submitted By</label><br>
+        <input style="width: 80%;" placeholder={{teamSelectedToViewResponses.spoc}} disabled>
+      </div>
+    </div>
+    <hr style="margin-top: 50px;margin-bottom: 50px;">
+    <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+    <div style="margin-top: 50px;border: 1px solid #000;margin-bottom: 15px;" *ngFor="let i of questionArray">
+      
+      <div style="margin-left: 20px;margin-top: 20px;margin-bottom: 20px;">
+        <label id="accoutnamelabel" style="padding-right: 57px;">Question</label>
+        <input type="text" style="width: 60%;" placeholder={{i.question}} disabled>
+        <label id="accoutnamelabel" style="margin-left: 40px;margin-right: 50px;">Score</label>
+        <input type="text" style="width: 2.5%;" placeholder={{i.score}} disabled>
+      </div>
+      <div style="margin-left: 20px;margin-top: 20px; margin-bottom: 20px;">
+        <label id="accoutnamelabel">Answer Selected</label>
+        <input type="text" style="width: 60%; " placeholder={{i.answer}} disabled>
+        <label id="accoutnamelabel" style="margin-left: 40px;">File Attached</label>
+        <button class='fas fa-download' (click)="downloadFile(i.responseId)"></button>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+ </div>

@@ -1,0 +1,15 @@
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: rgb(209, 209, 209);
+}
+.order-md-1{
+  padding-left: 10px;
+}
+.disabled {
+  pointer-events: none; 
+
+}
+.notification-counter {
+  cursor: pointer;
+}

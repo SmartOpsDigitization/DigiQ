@@ -1,0 +1,4 @@
+<div class="path-bar">
+  <a routerLink="/" ><img id="home" src="assets/Images/home.png"></a>
+  <a *ngFor="let path of paths" [routerLink]="path.link">  {{path.name}}</a>
+</div>

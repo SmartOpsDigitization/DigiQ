@@ -1,0 +1,31 @@
+<header style="margin-bottom: 5%;">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a routerLink="/"><img class="logo" src="assets/Images/amdocswhite.svg"></a>      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/superadmin/account']">Accounts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/superadmin/team']">Teams</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/superadmin/process']">Processes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/superadmin/processteammap']">Process Team Map</a>
+          </li>
+        
+        </ul>
+        <h1 class="top-header">{{header}}</h1>
+        <form class="form-inline mt-2 mt-md-0">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class='fas fa-user-alt'>
+              {{ntnetname}}</i> </button>
+        </form>
+      </div>
+    </nav>
+  </header>

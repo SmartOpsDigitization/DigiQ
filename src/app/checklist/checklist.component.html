@@ -1,0 +1,100 @@
+<!-- <app-dashboard-header [header]="header"></app-dashboard-header> -->
+
+<div style="margin-top: 20px">
+    <button class="tabbutton" [routerLink]="['/superadmin/process']">Process</button>
+    <button class="tabbutton" [routerLink]="['/superadmin/team']">Team</button>
+    <button class="tabbutton" [routerLink]="['/superadmin/account']">Account</button> 
+    <button class="tabbutton" [routerLink]="['/superadmin/checklist']">Checklist</button>
+    <!-- <button class="tabbutton" [routerLink]="['/superadmin/qereview']">QE</button> -->
+    <!-- <button class="tabbutton" (click)="processteambutton()">Process Team Map</button> -->
+    <button class="tabbutton" [routerLink]="['/superadmin/processteammap']">Process Team Map</button> 
+
+</div>
+
+<button mat-button style="margin-top: 30px;background: #FFFFFF;;margin-left: 100px" (click)="openchecklistpopup()">Add CheckList</button>
+    
+<!--span>
+    <label style="margin-left: 900px;font-size: 20px">Select Process</label>
+    <select style="margin-left: 20px;height:30px;width:200px" >
+      <option>Select 1</option>
+      <option>Select 2</option>
+    </select>
+</span-->
+
+
+<div *ngFor="let i of getchecklistarray" style="margin-top:20px;margin-left: 80px;margin-right:80px;" [attr.id]="i.account_id" >
+    <div class="card" style="margin-top: 20px" >
+      <h2 style="text-align: center">{{i.checklistName}}</h2>
+      <div>
+        <button class="button" style="margin-top: 60px;margin-left:10px" (click)="viewchecklistdata(i.processId,i.checklistId)">View </button>
+        <button class="button" style="margin-top: 30px;margin-left:10px" [routerLink]="['/prr']">Fill Checklist</button>
+
+      </div>
+      
+      <div style="margin-left: 30px;margin-top: 25px">
+        <button class="button" (click)="onselectmodify(i.checklistId,i.checklistName,i.processId)">Modify</button>
+        <button class="button" style="margin-left: 10px"  (click)="onselectdelte(i.checklistId)">Delete</button>
+      </div>
+     
+  
+    </div>
+  </div>
+
+
+
+
+
+<div *ngIf="checklistpopup" class="modal">   
+  <form class="modal-content animate" >
+
+    <div class="container">
+      <label for="uname"><b>CheckList Name</b></label>
+      <input type="text" [(ngModel)]="newchecklistname" placeholder="Enter CheckList Name" name="account" required>
+      <span>
+          <label for="uname" style="margin-right: 30px"><b>Select Process</b></label>
+          <select name="process" [(ngModel)]="processidvalue" style="width: 400px;height: 30px;"> 
+              <option *ngFor="let i of allprocess" [value]="i.processId">{{i.processName}}</option> 
+          </select>       
+      </span>
+      <br>
+      <span>
+          <button class="button1" type="submit" (click)="onsubmit()">Submit</button>
+          <button type="button" (click)="closepopup()" class="cancelbtn">Cancel</button>
+      </span>
+      
+    </div>
+  </form>
+</div>
+
+
+
+<div *ngIf="confirmdelete" class="modal">
+  
+    <form class="modal1-content animate" >
+  
+        <div class="container" style="align-content: center">
+            <span>
+                <br style="margin-top: 10px">
+                <span >Are you sure ?</span>
+                <button style="width: 50px;height:30px;margin-left: 10px;background-color: #333147;border: none;color: white;" (click)="Deletechecklist()">Yes</button>
+                <button style="width: 50px;height:30px;margin-left: 10px;background-color: #333147;border: none;color: white;" (click)="confirmdelete=false">No</button>
+              </span>
+        </div>
+      </form>
+</div>
+
+<div *ngIf="popupupdate" class="modal">   
+    <div class="modal-content animate" >
+  
+      <div class="container">
+        <label for="uname"><b>CheckList Name</b></label>
+        <input type="text" [(ngModel)]="updatechecklistname" placeholder="Enter Account Name" name="account" required>
+  
+        <label for="psw"><b>CheckList Desc</b></label>
+        <input type="text" placeholder="Enter Description" [(ngModel)]="checklistdesc" name="ChecklistDesc" required>
+          
+        <button class="button1" type="submit" (click)="onupdate()">Update</button>
+        <button type="button" (click)="closepopup()" class="cancelbtn">Cancel</button>
+      </div>
+    </div>
+</div>

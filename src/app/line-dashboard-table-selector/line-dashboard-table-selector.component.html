@@ -1,0 +1,16 @@
+<div class="parent-div">
+  <div class="first-div" >
+      <h2>Line:</h2>
+      <select class="selectorTag1" [(ngModel)]="selectedLineIndex" (change)="onLineSelect()">
+          <option value=-1 disabled hidden>Select Line</option>
+          <option *ngFor="let lineName of lineNames;index as i" [value]="i">{{lineName}}</option>
+        </select>
+  </div>
+  <div class="second-div">
+      <h2>Snapshot:</h2>
+      <select class="selectorTag2" [disabled]="isDisabled" [(ngModel)]="selectedSnapshotIndex" (change)="onSnapshotSelect()">
+          <option value=-1 disabled hidden>Select Snapshot</option>
+          <option *ngFor="let snapshot of selectedLine.snapshots;index as i" [value]="i">{{snapshot.snapshotName}}</option>
+      </select>      
+  </div>
+</div>

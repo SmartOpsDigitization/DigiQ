@@ -1,0 +1,16 @@
+<div class="parent-div">
+    <div class="first-div" >
+            <h2>Account: </h2>
+        <select class="selectorTag1" [(ngModel)]="selectedAccountIndex" (change)="onAccountSelect()">
+            <option value=-1 disabled hidden>Select Account</option>
+            <option *ngFor="let accountName of accountNames;index as i" [value]="i">{{accountName}}</option>
+          </select>
+    </div>
+    <div class="second-div">
+            <h2>Snapshot: </h2>
+        <select class="selectorTag2" [disabled]="isDisabled" [(ngModel)]="selectedSnapshotIndex" (change)="onSnapshotSelect()">
+            <option value=-1 disabled hidden>Select Snapshot</option>
+            <option *ngFor="let snapshot of selectedAccount.snapshots;index as i" [value]="i">{{snapshot.snapshotName}}</option>
+        </select>      
+    </div>
+</div>

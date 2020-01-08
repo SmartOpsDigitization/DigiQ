@@ -1,0 +1,15 @@
+
+.logo {
+    height:50px;
+    width:110px; 
+ }
+ .top-header{
+    /* font-weight: bold; */
+    text-align: justify;
+    /* margin-left: 5px; */
+    margin-right: 40%;
+    font-size: 6vh;
+    font-family: sans-serif;
+	color: #fff;
+	padding-bottom: 0;
+}

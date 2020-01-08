@@ -1,0 +1,18 @@
+<app-dashboard-header [header]="dashboardType"></app-dashboard-header>
+<div>
+    <app-path-bar [paths]="paths"></app-path-bar>
+</div>
+<div *ngIf="accountNamesLoaded&&incomingAccountIndexLoaded">
+    <app-account-dashboard-table-selector [accountNames]="accountNames" [incomingAccountIndex]="incomingAccountIndex" (AccountSelectorEvent)="setLatestAcccountDashboardTable($event)" (LoaderEvent)="startLoader()"
+        (SnapshotSelectorEvent)="setDashboardTable($event)"></app-account-dashboard-table-selector>
+</div>
+<div class="container" *ngIf="displayDashboardTable">
+    <app-dash-board-table [data]="snapshotToBeDisplayed" [dashboardType]="dashboardType" [currentUrl]="this.paths[this.paths.length-1].link"></app-dash-board-table>
+    <app-legend></app-legend>
+</div>
+<div *ngIf="!displayDashboardTable&&notFound">
+    <app-data-not-found></app-data-not-found>
+</div>
+<div *ngIf="displayLoader">
+        <app-loading></app-loading>
+</div>

@@ -1,0 +1,212 @@
+<!--
+<app-dashboard-header>
+</app-dashboard-header>
+-->
+<!-- <app-admin-header></app-admin-header>
+
+<div class="parent-div">
+
+
+
+    <div class="left-div">
+
+        <H1 class="team-detail-header">Team Details</H1>
+
+        <hr>
+        <div class="team-detail-div">
+            <div class="team-detail-row">
+                <div class="team-detail-col-left">Team Name</div>
+                <div class="team-detail-col">: {{team.teamName}}</div>
+            </div>
+
+            <div class="team-detail-row">
+                <div class="team-detail-col-left">Line Name</div>
+                <div class="team-detail-col">: {{team.lineName}}</div>
+            </div>
+
+            <div class="team-detail-row">
+                <div class="team-detail-col-left">Account Name</div>
+                <div class="team-detail-col">: {{team.accountName}}</div>
+            </div>
+
+            <div class="team-detail-row">
+                <div class="team-detail-col-left">Team Lead Name</div>
+                <div class="team-detail-col">: {{team.teamLeadName}}</div>
+            </div>
+
+        </div>
+
+
+        <div class="team-table-div">
+            <form *ngIf="datasourcePresent" class="form-style-2">
+                <table class="table1">
+                    <thead class="row">
+                        <td class="col-select"> </td>
+                        <td class="col" id="table-header">Pillar Name</td>
+                        <td class="col" id="table-header">Data Source</td>
+                        <td class="col" id="table-header">Frequency</td>
+                    </thead>
+                    <tr class="row" *ngFor=" let teamADS of teamAllDataSource , let i = index">
+                        <td class="col-select">
+                            <input type="radio" name="lineRadio" (change)="onSelectionIndex(i)">
+                        </td>
+                        <td class="col">{{teamADS.pillarName}}</td>
+                        <td class="col">{{teamADS.datasource}}</td>
+                        <td class="col">{{teamADS.cron}}</td>
+
+                    </tr>
+                </table>
+
+                <div class="button-div">
+                    <div class="button-div-left">
+                        <input id="submit-id" type="button" value="Modify Data Source" (click)="OnModifyDataSource()" />
+                    </div>
+                    <div class="button-div-middle">
+                        <input id="submit-id" type="reset" value="Reset" (click)="onResetRight()">
+                    </div>
+                    <div class="button-div-right">
+                        <input id="submit-id" type="button" value="Delete Data Source" (click)="OnDeleteDataSource()" />
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -->
+
+
+        <!--
+                  <form class="form-style-1">
+                   
+                       <table>
+                            <thead class="row">
+                                <td class="col-select">  </td>
+                                <td class="col" id="table-header">Team Name</td>
+                                <td class="col" id="table-header">Team Lead Name</td>
+                                <td class="col" id="table-header">Line Name</td>
+                                <td class="col" id="table-header">Account Name</td>
+                                <td class="col" id="table-header">Team Details</td>
+                            </thead>
+                                <tr class="row" *ngFor=" let team of teams , let i = index">
+                                    <td class="col-select"><input type="radio" name="lineRadio" (change)="onSelectionIndex(i)"></td>
+                                    <td class="col">{{teams[i].teamName}}</td>
+                                    <td class="col">{{teams[i].teamLeadName+" "}}</td>
+                                    <td class="col">{{teams[i].lineName+" "}}</td>
+                                    <td class="col">{{teams[i].accountName+" "}}</td>
+                                    <td class="col">{{teams[i].teamDetails+" "}}</td>
+                                </tr>
+                            </table>
+
+                       
+                         <br><br>
+                         <div class="button-div">
+                            <div class="button-div-left">
+                                <input id="submit-id" type="button" value="Modify Team" (click)=modifyTeam()/>
+                            </div>   
+                            <div class="button-div-middle">
+                                    <input id="submit-id" type="Reset" value="Reset" (click)=onResetTeamSelection()/>
+                                    <input id="submit-id" type="button" value="config" (click)=onTeamConfig()/>
+                            </div>
+                            <div class="button-div-right">
+                                <input id="submit-id" type="button" value="Delete Team" (click)=deleteTeam() />           
+                            </div>
+                          </div>
+                      </form> 
+                    -->
+
+
+
+    <!-- </div>
+    <div class="right-div">
+        <H1 class="team-detail-header">Data Source Configuration</H1>
+        <hr>
+        <form (ngSubmit)="onSubmit()">
+            <ul class="form-style-1">
+                <li>
+                    <label class="label-css">Pillar Name
+                        <span class="required">*</span>
+                    </label>
+                    <select class="field-select" name="pillarName" [(ngModel)]="configTeam.pillarName">
+
+                   
+                        <option value="Code Review">Code Review</option>
+
+                    </select>
+                </li>
+
+                <li>
+                    <label class="label-css">Data Source
+                        <span class="required">*</span>
+                    </label>
+                    <select name="dataSource" class="field-select" [(ngModel)]="configTeam.datasource">
+                        <option value="sonar">Sonar-Api</option>
+                        <option value="SONAR_CSV">Sonar-CSV</option>
+                    </select>
+                </li>
+
+
+                <li>
+                    <label class="label-css">Source URL
+                        <span class="required">*</span>
+                    </label>
+                    <input type="text" name="url" class="field-long" [(ngModel)]="configTeam.datasourceUrl" [disabled]="teamNameDisabled" placeholder="e.g : sonar url"
+                    />
+                </li>
+                <li>
+                    <label class="label-css">Data Source UserName<span class="required">*</span></label>
+                    <input type="text" name="userId" class="field-long" [(ngModel)]="configTeam.userId" placeholder="e.g : sonar username" />
+                </li>
+
+                <li>
+                    <label class="label-css">Data Source Password</label>
+                    <input type="password" name="password" class="field-long" [(ngModel)]="configTeam.password" placeholder="e.g : sonar password"
+                    />
+                </li>
+
+                <li>
+                    <label class="label-css">Frequency</label>
+                    <select name="cron" class="field-select" [(ngModel)]="configTeam.cron">
+
+                        <option value="* * * * * UTC">Default</option>
+                        <option value="1">1 Day</option>
+                        <option value="7">7 Day</option>
+                        <option value="15">15 Day</option>
+                        <option value="30">1 Month</option>
+                        <option value="90">3 Month</option>
+                        <option value="180">6 Month</option>
+                        <option value="365">1 Year</option>
+                    </select>
+                </li>
+                <br>
+                <li>
+
+                    <input id="submit-id" class="right-div-button1" type="submit" value={{formButtonName}} />
+                    <input id="submit-id" class="right-div-button2" type="reset" (click)="onReset()" />
+                </li>
+            </ul>
+
+
+
+        </form>
+
+    </div>
+
+
+
+</div> -->

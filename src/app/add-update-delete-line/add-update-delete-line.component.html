@@ -1,0 +1,81 @@
+<!--
+<app-dashboard-header>
+</app-dashboard-header>
+-->
+<app-admin-header></app-admin-header>
+
+<div class="parent-div">
+
+    <div class="right-div">
+            <H1 class="team-detail-header">Lines</H1>
+            <hr>
+  <!--navigation-->
+  
+  <!-- -->
+      <div class="team-table-div">
+
+        <form class="form-style-2" >
+          
+            <table>
+                <thead class="row">
+                    <td class="col-select"></td>
+                    <td class="col" id="table-header">Line Name</td>
+                    <td class="col" id="table-header">LM Name</td>
+                </thead>
+            </table>
+            <table >    
+                
+                    <tr  class="row" *ngFor=" let line of lines ;index as i">
+                        <td class="col-select"><input  type="radio" name="lineRadio" (change)="onSelectionIndex(i)"></td>
+                        <td class="col">{{line.lineName}}</td>
+                        <td class="col">{{line.lineManagerName}}</td>
+                    </tr>
+                
+             </table> 
+               <br><br>
+               <div class="button-div">
+                  <div class="button-div-left">
+                      <input id="submit-id" type="button" value="Modify Line" (click)="OnModifyLine()" />
+                  </div>   
+                  <div class="button-div-middle">      
+                    <input id="submit-id" type="reset"  value="Reset" (click)="onResetRight()">
+                 </div>
+                  <div class="button-div-right">
+                      <input id="submit-id" type="button" value="Delete Line" (click)="OnDeleteLine()"/>           
+                  </div>
+                </div>
+            </form> 
+        </div>
+    </div>
+  
+    <div class="left-div">
+            <H1 class="team-detail-header"> {{formButtonName}}</H1>
+            <hr>
+        <form (ngSubmit)="onSubmit()" >
+            <ul class="form-style-1">
+                <li>
+                    <label>Line Name <span class="required">*</span></label>
+                    <input type="text" name="form_lineName" class="field-long" [(ngModel)]="line.lineName" [disabled]="lineNameDisabled" required=true/>
+                </li>
+                <br>
+                <li>
+                    <label>Line Manager Name <span class="required">*</span></label>
+                    <input type="text" name="form_lineManagerName" class="field-long" [(ngModel)]="line.lineManagerName"  required=true/>
+                </li>
+                <br>
+                <li>
+                    <label>Line Details </label>
+                    <textarea name="form_lineDetail" class="field-long field-textarea" [(ngModel)]="line.lineDetails" required=true></textarea>
+                </li>
+                <br>
+                <li>
+                    <input id="submit-id" type="button" class="right-div-button1"  value="Reset" (click)="onReset()">
+                    <input id="submit-id" type="submit" class="right-div-button2"  value={{formButtonName}}  />
+                </li>
+            </ul>
+        </form>
+    </div>
+   
+  
+  </div>
+ 

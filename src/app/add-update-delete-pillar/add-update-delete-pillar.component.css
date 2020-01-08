@@ -1,0 +1,322 @@
+
+
+/************************************/
+
+
+
+.parent-div{
+    height:auto;
+    min-height: 85.5vh !important;
+    width:100%;
+    
+    padding: 0.2%;
+    
+    }
+    
+    .right-div{
+        height:auto;
+        min-height: 85.5vh !important;
+        width:49.8%;
+        background-color:rgba(0, 0, 0, 0.658);
+        margin-left: 5px;
+        float:left;
+        
+        border-radius: 2%;
+    }
+    
+    .left-div{
+        height:auto;
+        min-height: 85.5vh !important;
+        width:49.6%;
+        background-color:rgba(0, 0, 0, 0.658);
+        float:left;
+        border-radius: 2%;
+    }
+
+
+.team-table-div{
+    margin-top: 5vh; 
+    width:100%;
+    height:auto;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.row{
+width:100%;
+}
+.col{
+    font-size:100;
+    
+ 
+    text-align:center;
+    border-width: 1px;
+    }
+
+.col-select{
+  
+     
+        width:auto;
+        text-align:center;
+        border-width: 1px;
+        padding: 10px;
+        }
+            
+
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border-radius: 2%;
+    padding:1%;
+}
+
+th, td {
+    text-align: left;
+    padding:3%;
+    font-weight: 600;
+    color:rgba(0, 0, 0, 0.658);
+}
+
+thead{
+    background-color: rgba(172, 170, 168, 0.473);
+}
+
+#table-header{
+    font-size: 120%;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: antiquewhite;
+}
+
+
+tr:nth-child(even) {
+    background-color:rgba(123, 155, 224, 0.63);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(163, 190, 248, 0.63);
+}
+
+
+.field-div{
+    background-color: skyblue;
+    width:90%;
+    padding:5%;
+    height:7%;
+}
+
+
+.text-field-div{
+    width:30%;
+    height:100%;
+    float: left;
+}
+
+.text-input-div{
+    width:70%;
+    height:100%;
+    float: left;
+}
+
+
+
+#submit-id{
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#submit-id:hover{
+    background-color: darkcyan;
+    color: white;
+}
+
+
+
+.button-div{
+    width:100%;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+.button-div-left{
+    float:left;
+    width:20%;
+}
+.button-div-middle-left{
+    float:left;
+    width:30%;
+}
+.button-div-middle-right{
+    float:right;
+    width:20%;
+}
+.button-div-right{
+    float:right;
+    width:20%;
+}
+
+
+
+
+
+/**********************************/
+
+.form-style-1 {
+    margin:10px auto;
+    max-width: 75%;
+    padding: 20px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-2 {
+    margin:10px auto;
+    max-width: 80%;
+    padding: 20px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-1 li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+.form-style-1 label{
+    padding:5px;
+    display:block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+    color:white;
+    font-size: 130%;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+.form-style-1 input[type=password],
+textarea, 
+select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;  
+}
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+}
+
+
+.form-style-1 .field-select{
+    width: 100%;
+}
+.form-style-1 .field-textarea{
+    height: 18%;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+    background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+    background: #4691A4;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+
+.form-style-1 .required{
+    color:red;
+}
+
+
+
+.right-div-button1{
+    margin-top:10%;
+    margin-left: 10%;
+}
+.right-div-button2{
+    margin-top:10%;
+    margin-left: 10%;
+}
+
+.field-long{
+    width:400px;
+}
+
+
+
+
+
+
+
+/***********navigation bar**************/
+
+.nav-div{
+    width:100%;
+    height:7vh;
+}
+.nav-home{
+    width:15%;
+    height:7vh;
+    float:left;
+}
+
+.nav-line{
+    width:15%;
+    height:7vh;
+    float:left;
+}
+
+.nav-account{
+    width:15%;
+    height:7vh;
+    float:left;
+}
+
+.nav-team{
+    width:15%;
+    height:7vh;
+    float:left;
+}
+.team-detail-header
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color:white;
+    text-align: center;
+}
+
+/*******************************/

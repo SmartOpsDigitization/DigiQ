@@ -1,0 +1,29 @@
+#table-style{
+    align-self: auto;
+    margin-left: 330px;
+    margin-top: 200px;
+}
+
+
+#table-style td{
+    padding: 20px
+}
+
+#images-table{
+    height: 100px;
+    width: 100px;
+    align:middle;
+    padding-left: 50px
+}
+
+.tabbutton{
+    background-color: #333147; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+}

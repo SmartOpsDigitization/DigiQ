@@ -1,0 +1,15 @@
+<app-dashboard-header [header]="dashboardType"></app-dashboard-header>
+<div>
+    <app-path-bar [paths]="paths"></app-path-bar>
+</div>
+<div *ngIf="admLoaded">
+    <app-adm-dashboard-table-selector [adm]="adm" (SnapshotSelectorEvent)="setAdmDashboardTable($event)"></app-adm-dashboard-table-selector>
+</div>
+<div class="container" *ngIf="displayDashboardTable">
+    <app-adm-dashboard-table [data]="snapshotToBeDisplayed"  [currentUrl]="paths[paths.length-1].link"></app-adm-dashboard-table>
+    <app-legend></app-legend>
+</div>
+
+<div *ngIf="!displayDashboardTable">
+    <app-loading></app-loading>
+</div>

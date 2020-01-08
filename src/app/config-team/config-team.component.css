@@ -1,0 +1,321 @@
+
+  
+
+/************************************/
+
+
+
+.parent-div{
+height: 85.5vh;
+width:100%;
+padding: 0.2%;
+}
+
+.right-div{
+    height:auto;
+    min-height: 85.5vh !important;
+    width:49.8%;
+    background-color:rgba(0, 0, 0, 0.658);
+    margin-left: 5px;
+    float:left;
+    
+    border-radius: 2%;
+}
+
+.left-div{
+    height:auto;
+    min-height: 85.5vh !important;
+    width:49.6%;
+    background-color:rgba(0, 0, 0, 0.658);
+    float:left;
+    border-radius: 2%;
+}
+
+
+.team-table-div{
+    margin-top: 5vh; 
+    width:100%;
+    height:auto;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.row{
+width:100%;
+}
+.col{
+    font-size:100;
+    
+    width:10vw;
+    text-align:center;
+    border-width: 1px;
+    }
+
+.col-select{
+        font-size:100;
+        font-weight: bold;
+        width:1vw;
+        text-align:center;
+        border-width: 1px;
+        }
+            
+
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border-radius: 2%;
+    padding:1%;
+}
+
+th, td {
+    text-align: left;
+    padding:3%;
+    font-weight: 600;
+    color:rgba(0, 0, 0, 0.658);
+}
+
+thead{
+    background-color: rgba(172, 170, 168, 0.473);
+}
+
+#table-header{
+    font-size: 120%;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: antiquewhite;
+}
+
+tr:nth-child(even) {
+    background-color:rgba(123, 155, 224, 0.63);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(163, 190, 248, 0.63);
+}
+
+
+.field-div{
+    background-color: skyblue;
+    width:90%;
+    padding:5%;
+    height:7%;
+}
+
+
+.text-field-div{
+    width:30%;
+    height:100%;
+    float: left;
+}
+
+.text-input-div{
+    width:70%;
+    height:100%;
+    float: left;
+}
+
+
+
+#submit-id{
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+#submit-id:hover{
+    background-color: darkcyan;
+    color: white;
+}
+
+
+.button-div{
+    width:100%;
+    margin-top: 10%;
+    margin-left: 18%;
+}
+.button-div-left{
+    float:left;
+    width:35%;
+}
+.button-div-middle{
+    float:left;
+    width:30%;
+}
+.button-div-right{
+    float:right;
+    width:35%;
+}
+
+checkbox{
+font-weight: bolder;
+}
+
+#dropdown-option
+{
+font-size:120%;
+}
+
+.right-div-button1{
+    margin-top:10%;
+    margin-left: 20%;
+}
+.right-div-button2{
+    margin-top:10%;
+    margin-left: 10%;
+}
+
+/**********************************/
+
+.form-style-1 {
+    margin-left: 10%;
+    width:70%;
+    padding: 10px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-1 li {
+    
+    display: block;
+    list-style: none;
+   
+}
+.label-css{
+    padding:5px;
+    display:block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top:2vh; 
+    color:white;
+    font-size: 130%;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+.form-style-1 input[type=password],
+textarea, 
+select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;  
+}
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+}
+.form-style-1 .field-divided{
+    width: 49%;
+}
+
+.form-style-1 .field-long{
+    width: 100%;
+}
+
+.form-style-1 .field-select{
+    width: 100%;
+    font-size: 120%;
+}
+.form-style-1 .field-textarea{
+    height: 18%;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+    background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+    background: #4691A4;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+
+.form-style-1 .required{
+    color:red;
+}
+.form-style-2{
+    margin: 20px;
+}
+
+
+
+/***************************************************************/
+/***************************************************************/
+
+
+
+
+/**/
+
+.team-detail-div{
+    width:60%;
+    padding-left: 20%;
+    border: 5px;
+    
+}
+
+.team-detail-row{
+    height:auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 3%;
+    color:white;
+    font-size: 80%;
+    
+}
+.team-detail-col-left{
+    font-size: 130%;
+    width:50%;
+    float: left;
+    color: rgb(156, 201, 173)
+}
+
+.team-detail-col{
+    font-size: 130%;
+    width:50%;
+    float: left;
+}
+
+
+
+.team-detail-header
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color:white;
+    text-align: center;
+}
+

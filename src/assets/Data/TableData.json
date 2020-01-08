@@ -1,0 +1,1531 @@
+[
+    {
+    "teamId":"1",
+    "teamName":"Team1",
+    "accountId":"1",
+    "accountName":"Account1",
+    "lineName":"Line1",
+    "releases":[
+      {
+      "releaseId":"11",
+      "productionDate":"07-03-18",
+      "currentPhase":"CodeReview",
+      "snapshots":[
+       {
+        "snapshotName":"01-02-18",
+        "dataRefreshedOn":"01-02-18",
+        "columnNames":[
+          "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows":[
+          {  
+                "rowName":"Amateur",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":95
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":67
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":42
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Qualified",
+                "rowCellData":[  
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Uplift",
+                "rowCellData":[  
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":80
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Advanced",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             }
+         ] 
+       }
+      ]
+     },
+     {
+      "releaseId":"12",
+      "productionDate":"01-12-17",
+      "currentPhase":"CodeReview",
+      "snapshots":[
+       {
+        "snapshotName":"01-12-17",
+        "dataRefreshedOn":"01-12-17",
+        "columnNames":[
+           "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows":[
+        {  
+                "rowName":"Amateur",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":95
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":67
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Qualified",
+                "rowCellData":[
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                 ]
+             },
+             {  
+                "rowName":"Uplift",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Advanced",
+                "rowCellData":[  
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             }
+
+        ] 
+       },
+        {
+        "snapshotName":"01-11-17",
+        "dataRefreshedOn":"01-11-17",
+        "columnNames":[
+           "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows":[
+           {  
+                "rowName":"Amateur",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":95
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":60
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Qualified",
+                "rowCellData":[  
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                  ]
+             },
+             {  
+                "rowName":"Uplift",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Advanced",
+                "rowCellData":[  
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             }
+
+        ] 
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "teamId":"2",
+    "teamName":"Team2",
+    "accountId":"1",
+    "accountName":"Account1",
+    "lineName":"Line1",
+    "releases":[
+      {
+      "releaseId":"11",
+      "productionDate":"07-03-18",
+      "currentPhase":"CodeReview",
+      "snapshots":[
+       {
+        "snapshotName":"01-02-18",
+        "dataRefreshedOn":"01-02-18",
+        "columnNames":[
+          "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows":[
+          {  
+                "rowName":"Amateur",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":95
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":67
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":42
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Qualified",
+                "rowCellData":[  
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Uplift",
+                "rowCellData":[  
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":80
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Advanced",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             }
+         ] 
+       }
+      ]
+     },
+     {
+      "releaseId":"12",
+      "productionDate":"01-12-17",
+      "currentPhase":"CodeReview",
+      "snapshots":[
+       {
+        "snapshotName":"01-12-17",
+        "dataRefreshedOn":"01-12-17",
+        "columnNames":[
+           "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows":[
+        {  
+                "rowName":"Amateur",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":95
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":67
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Qualified",
+                "rowCellData":[
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                 ]
+             },
+             {  
+                "rowName":"Uplift",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Advanced",
+                "rowCellData":[  
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             }
+
+        ] 
+       },
+        {
+        "snapshotName":"01-11-17",
+        "dataRefreshedOn":"01-11-17",
+        "columnNames":[
+           "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows":[
+           {  
+                "rowName":"Amateur",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":95
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":60
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Qualified",
+                "rowCellData":[  
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                  ]
+             },
+             {  
+                "rowName":"Uplift",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Advanced",
+                "rowCellData":[  
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             }
+
+        ] 
+       }
+      ]
+     }
+    ]
+   },
+   
+   
+   
+   
+   {
+    "teamId":"3",
+    "teamName":"Team3",
+    "accountId":"2",
+    "accountName":"Account2",
+    "lineName":"Line1",
+    "releases":[
+      {
+      "releaseId":"11",
+      "productionDate":"07-03-18",
+      "currentPhase":"CodeReview",
+      "snapshots":[
+       {
+        "snapshotName":"01-02-18",
+        "dataRefreshedOn":"01-02-18",
+        "columnNames":[
+          "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows":[
+          {  
+                "rowName":"Amateur",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":95
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":67
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":42
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Qualified",
+                "rowCellData":[  
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Uplift",
+                "rowCellData":[  
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":80
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Advanced",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             }
+         ] 
+       }
+      ]
+     },
+     {
+      "releaseId":"12",
+      "productionDate":"01-12-17",
+      "currentPhase":"CodeReview",
+      "snapshots":[
+       {
+        "snapshotName":"01-12-17",
+        "dataRefreshedOn":"01-12-17",
+        "columnNames":[
+           "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows":[
+        {  
+                "rowName":"Amateur",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":95
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":67
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Qualified",
+                "rowCellData":[
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                 ]
+             },
+             {  
+                "rowName":"Uplift",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Advanced",
+                "rowCellData":[  
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             }
+
+        ] 
+       },
+        {
+        "snapshotName":"01-11-17",
+        "dataRefreshedOn":"01-11-17",
+        "columnNames":[
+           "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows":[
+           {  
+                "rowName":"Amateur",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":95
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":60
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Qualified",
+                "rowCellData":[  
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                  ]
+             },
+             {  
+                "rowName":"Uplift",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Advanced",
+                "rowCellData":[  
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             }
+
+        ] 
+       }
+      ]
+     }
+    ]
+   },
+   
+   
+   
+   
+   {
+    "teamId":"4",
+    "teamName":"Team4",
+    "accountId":"2",
+    "accountName":"Account2",
+    "lineName":"Line1",
+    "releases":[
+      {
+      "releaseId":"21",
+      "productionDate":"07-03-18",
+      "currentPhase":"CodeReview",
+      "snapshots":[
+       {
+        "snapshotName":"07-03-18",
+        "dataRefreshedOn":"07-03-18",
+        "columnNames":[
+           "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows":[
+        	 {  
+                "rowName":"Amateur",
+                "rowCellData":[  
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":95
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":67
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":42
+                   },
+                   {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Qualified",
+                "rowCellData":[  
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                    {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Uplift",
+                "rowCellData":[  
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":30
+                   },
+                    {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Advanced",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                    {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             }
+        ] 
+       },
+        {
+        "snapshotName":"01-02-18",
+        "dataRefreshedOn":"01-02-18",
+        "columnNames":[
+           "Estimation",
+          "Design & Review",
+          "Code Review",
+          "Unit Testing",
+          "Build",
+          "Defect Density"
+        ],
+        "rows":[
+         {  
+                "rowName":"Amateur",
+                "rowCellData":[  
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":95
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":67
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":42
+                   },
+                    {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Qualified",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                    {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Uplift",
+                "rowCellData":[  
+                   {  
+                      "color":"#2596ed",
+                      "score":40
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":38
+                   },
+                    {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             },
+             {  
+                "rowName":"Advanced",
+                "rowCellData":[  
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":95
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                    {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+                ]
+             }
+        ] 
+       }
+      ]
+     }
+    ]
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "snapshotName": "22-06-2018",
+    "dateRefreshedOn": "22-06-2018",
+    "columnNames": [
+      "Team Name",
+      "Account Name",
+      "GL Name",
+      "Line Name",
+      "Line Manager Name",
+      "Code Review",
+      "Unit Testing",
+      "Total Score"
+    ],
+    "rows": [
+      {
+        "rowName": "Team1",
+        "rowCellData": [
+          {
+            "isPillarScore": false,
+            "cellData": "Account1",
+            "color": " ",
+            "score": " "
+          },
+          {
+            "isPillarScore": false,
+            "cellData": "GL_Team1",
+            "color": " ",
+            "score": " "
+          },
+          {
+            "isPillarScore": false,
+            "cellData": "Line3",
+            "color": " ",
+            "score": " "
+          },
+          {
+            "isPillarScore": false,
+            "cellData": "Manager_Line3",
+            "color": " ",
+            "score": " "
+          },
+          {
+            "isPillarScore": true,
+            "cellData": "",
+            "color": "amdocs",
+            "score": "100 "
+          },
+          {
+            "isPillarScore": true,
+            "cellData": "",
+            "color": "#2596ed",
+            "score": "40"
+          },
+          {
+            "isPillarScore": false,
+            "cellData": 140,
+            "color": " ",
+            "score": ""
+          }
+        ]
+      },
+      {
+        "rowName": "Team2",
+        "rowCellData": [
+          {
+            "isPillarScore": false,
+            "cellData": "Account2",
+            "color": " ",
+            "score": " "
+          },
+          {
+            "isPillarScore": false,
+            "cellData": "GL_Team2",
+            "color": " ",
+            "score": " "
+          },
+          {
+            "isPillarScore": false,
+            "cellData": "Line2",
+            "color": " ",
+            "score": " "
+          },
+          {
+            "isPillarScore": false,
+            "cellData": "Manager_Line2",
+            "color": " ",
+            "score": " "
+          },
+          {
+            "isPillarScore": true,
+            "cellData": "",
+            "color": "#2596ed",
+            "score": "40 "
+          },
+          {
+            "isPillarScore": true,
+            "cellData": "",
+            "color": "#2596ed",
+            "score": "40"
+          },
+          {
+            "isPillarScore": false,
+            "cellData": 80,
+            "color": " ",
+            "score": ""
+          }
+        ]
+      },
+      {
+        "rowName": "Team3",
+        "rowCellData": [
+          {
+            "isPillarScore": false,
+            "cellData": "Account1",
+            "color": " ",
+            "score": " "
+          },
+          {
+            "isPillarScore": false,
+            "cellData": "GL_Team3",
+            "color": " ",
+            "score": " "
+          },
+          {
+            "isPillarScore": false,
+            "cellData": "Line1",
+            "color": " ",
+            "score": " "
+          },
+          {
+            "isPillarScore": false,
+            "cellData": "Manager_Line1",
+            "color": " ",
+            "score": " "
+          },
+          {
+            "isPillarScore": true,
+            "cellData": "",
+            "color": "amdocs",
+            "score": "100 "
+          },
+          {
+            "isPillarScore": true,
+            "cellData": "",
+            "color": "amdocs",
+            "score": "100"
+          },
+          {
+            "isPillarScore": false,
+            "cellData": 200,
+            "color": " ",
+            "score": ""
+          }
+        ]
+      },
+      {
+        "rowName": "Team4",
+        "rowCellData": [
+          {
+            "isPillarScore": false,
+            "cellData": "Account3",
+            "color": " ",
+            "score": " "
+          },
+          {
+            "isPillarScore": false,
+            "cellData": "GL_Team4",
+            "color": " ",
+            "score": " "
+          },
+          {
+            "isPillarScore": false,
+            "cellData": "Line2",
+            "color": " ",
+            "score": " "
+          },
+          {
+            "isPillarScore": false,
+            "cellData": "Manager_Line2",
+            "color": " ",
+            "score": " "
+          },
+          {
+            "isPillarScore": true,
+            "cellData": "",
+            "color": "#69c64d",
+            "score": "80 "
+          },
+          {
+            "isPillarScore": true,
+            "cellData": "",
+            "color": "#69c64d",
+            "score": "80"
+          },
+          {
+            "isPillarScore": false,
+            "cellData": 160,
+            "color": " ",
+            "score": ""
+          }
+        ]
+      }
+    ]
+  }
+]

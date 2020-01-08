@@ -1,0 +1,138 @@
+<!--
+<app-dashboard-header>
+</app-dashboard-header>
+-->
+<app-admin-header></app-admin-header>
+
+<div class="parent-div">
+
+	<div class="left-div">
+		<H1 class="team-detail-header">{{formButtonName}} </H1>
+            <hr>
+        <form (ngSubmit)="onSubmit()">
+            <ul class="form-style-1"> 
+                <br>
+				<li>
+                    <label class="label-css">Report Name: <span class="required">*</span>
+                    </label>  
+					<!-- <select [(ngModel)]="selectedReport" name="Reports" > 
+							<option *ngFor=" let report of reports ;index as i" value="{{report.reportId}}" [selected]="option === selectedOption">{{report.reportName}}</option>
+					</select> -->
+                 </li>
+				 <!-- <li>
+                    <label class="label-css" onchange="onLevelChange()">Levels: <span class="required">*</span>
+                    </label> 
+					<select name="Levels" >
+							<option *ngFor=" let level of levels ;index as i" value="{{level.levelId}}">{{level.levelName}}</option>
+					</select>
+                 </li> -->
+				 <li>
+                    <label class="label-css" >Category Name : <span class="required">*</span>
+                    </label> 
+					<textarea name="form_pillarName" class="field-long field-textarea" [(ngModel)]="pillar.pillarName" required=true></textarea>
+
+                </li>
+                <!-- <li> -->
+                    <!-- <label class="label-css">Pillar Id: -->
+                        <!-- <span class="required">*</span> -->
+					<!-- </label> -->
+					<!-- <textarea name="form_pillarId" class="field-long field-textarea" [(ngModel)]="pillar.pillarId" required=true></textarea> -->
+                    
+                <!-- </li> -->
+				
+				<!-- <li>
+                    <label class="label-css">Report Id : <span class="required">*</span>
+					</label>
+					<textarea name="form_reportId" class="field-long field-textarea" [(ngModel)]="pillar.reportId" required=true></textarea>
+                    
+                </li> -->
+                
+                <!-- <table class="pillar-add"> -->
+                        <!-- <thead> -->
+                            <!-- <td></td> -->
+                            <!-- <td>Level Names</td>  -->
+                            <!-- <td>Scores</td> -->
+                        <!-- </thead> -->
+                        <!-- <tr> -->
+                            <!-- <td><input type="checkbox"></td> -->
+                            <!-- <td>Advanced</td> -->
+                            <!-- <td><input type="text"></td>  -->
+                        <!-- </tr> -->
+                        <!-- <tr> -->
+                            <!-- <td><input type="checkbox"></td> -->
+                            <!-- <td>Up-Lift</td> -->
+                            <!-- <td><input type="text"></td>  -->
+                        <!-- </tr> -->
+                        <!-- <tr> -->
+                            <!-- <td><input type="checkbox"></td> -->
+                            <!-- <td>Qualified</td> -->
+                            <!-- <td><input type="text"></td>  -->
+                        <!-- </tr> -->
+                        <!-- <tr> -->
+                            <!-- <td><input type="checkbox"></td> -->
+                            <!-- <td>Amateur</td> -->
+                            <!-- <td><input type="text"></td>  -->
+                        <!-- </tr>  -->
+                <!-- </table> -->
+
+				<li>
+                    <label class="label-css">Category Details : <span class="required">*</span>
+                    </label>
+                    <textarea name="form_pillarDetails" class="field-long field-textarea" [(ngModel)]="pillar.pillarDetails" required=true></textarea>
+                </li>
+                <br>
+                <li> 
+                            <input id="submit-id" type="button" class="right-div-button1" value="Reset" (click)=onReset()/> 
+                            <input id="submit-id" type="submit" class="right-div-button1" value="Submit" /> 
+                </li>
+            </ul> 	
+        </form> 
+    </div>
+
+
+    <div class="right-div">
+            <H1 class="team-detail-header">Category</H1>
+            <hr>
+  <!--navigation-->
+  
+  <!-- -->
+      <div class="team-table-div">
+
+        <form class="form-style-2" >
+          
+            <table>
+                <tr class="row">
+                    <td class="col-select"></td>
+                    <td class="col" id="table-header">Report Name</td>  
+					<td class="col" id="table-header">Category Name</td>   
+                </tr>     
+                <tr  class="row" *ngFor=" let pillar of pillars ;index as i">
+                        <td class="col-select"><input  type="radio" name="lineRadio" (change)="onSelectionIndex(i)"></td>
+                        <td class="col">{{pillar.reportName}}</td>
+						<td class="col">{{pillar.pillarName}}</td>
+                </tr>
+                
+             </table> 
+               <br><br>
+               <div class="button-div">
+                  <div class="button-div-left">
+                      <input id="submit-id" type="button" value="Modify" (click)="OnModifyCategory()" />
+                  </div>   
+                  <!-- <div class="button-div-middle-left">      
+                    <input id="submit-id" type="reset"  value="Reset" (click)="onResetRight()">
+                 </div> -->
+                  <div class="button-div-middle-right">
+                      <input id="submit-id" type="button" value="Delete" (click)="OnDeleteCategory()"/>           
+                  </div>
+                  <div class="button-div-right">
+                    <input id="submit-id" type="button" value="Add KPI" (click)="launchKPI()"/>           
+                </div>
+                </div>
+            </form> 
+        </div>
+    </div>
+    
+   
+  
+  </div>
+ 

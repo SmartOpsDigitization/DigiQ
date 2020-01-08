@@ -1,0 +1,72 @@
+<!-- <div class="top-div-container">
+  <div class="firstDiv" >
+      <select class="selecterTag" [(ngModel)]="selectedTeamIndex" (change)="onTeamSelect()">
+          <option value=-1 disabled hidden>Select team</option>
+          <option *ngFor="let team of teams;index as i" [value]="i">{{team.teamName}}</option>
+        </select>
+  </div> -->
+<!-- <div class="top-div-container">
+  <div class="firstDiv" >
+      <select class="selecterTag" [(ngModel)]="selectedTeamIndex" (change)="onTeamSelect()">
+          <option value=-1 disabled hidden>Select team</option>
+          <option *ngFor="let team of teams;index as i" [value]="i">{{team.teamName}}</option>
+        </select>
+  </div>
+  <div class="secondDiv">
+      <table class="table1sh" >      
+        <tr>
+            <td class="td1sh">Release ID 
+                          <select class="releaseSelector" [disabled]="isDisabled" [(ngModel)]="selectedReleaseIndex" (change)="OnReleaseSelect()">
+                              <option value=-1 disabled hidden>Select Release ID</option>
+                              <option *ngFor="let release of selectedTeam.releases;index as i" [value]="i">{{release.releaseId}}</option>
+                          </select>      
+            </td> 
+            <td class="td2sh">Production Date:{{productionDate}}</td>
+        </tr>
+        <tr>
+            <td class="td3sh">Current phase:{{currentPhase}}</td>
+            <td class="td4sh">Data Refreshed On:{{dateRefreshedOn}}</td>
+        </tr>
+      </table>
+  </div>
+  <div class="thirdDiv">
+    <select class="selecterTag" [disabled]="isDisabled" [(ngModel)]="selectedSnapshotIndex" (change)="OnSnapshotSelect()">
+        <option value=-1 disabled hidden>Select Snapshot</option>
+        <option *ngFor="let snapshot of selectedTeamRelease.snapshots;index as i" [value]="i">{{snapshot.snapshotName}}</option>
+      </select>      
+ </div>
+</div> -->
+
+<div class="selector-container">
+    <div class="dropdown-container">
+            <h2>Team: </h2>      
+        <select class="selector" [(ngModel)]="selectedTeamIndex" (change)="onTeamSelect()">
+            <option value=-1 disabled hidden>Select team</option>
+            <option *ngFor="let teamName of teamNames;index as i" [value]="i">{{teamName}}</option>
+          </select>
+    </div>
+    <div class="center-display-container">
+        <div class="inner-table-container">
+            <div class="row">
+                <div class="column" id="cell1">
+                    <h2 id="release-id">Release ID:</h2>
+                </div>
+                <div class="column" id="cell2">
+                   
+                        <select id="releaseIDselector"  [disabled]="isDisabled" [(ngModel)]="selectedReleaseIndex" (change)="OnReleaseSelect()">
+                                <option value=-1 disabled hidden>Select Release ID</option>
+                                <option *ngFor="let release of selectedTeam.releases;index as i" [value]="i">{{release.releaseId}}</option>
+                        </select> 
+                </div>
+            </div>
+        
+         </div>
+    </div>
+    <div class="date">
+            <h2>Snapshot: </h2>
+        <select class="selector" id="rightselector" [disabled]="isDisabled" [(ngModel)]="selectedSnapshotIndex" (change)="OnSnapshotSelect()">
+            <option value=-1 disabled hidden>Select Snapshot</option>
+            <option *ngFor="let snapshot of selectedTeamRelease.snapshots;index as i" [value]="i">{{snapshot.snapshotName}}</option>
+          </select>
+    </div>
+</div>

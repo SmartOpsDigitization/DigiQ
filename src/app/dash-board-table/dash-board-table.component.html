@@ -1,0 +1,25 @@
+<div class="tableDash">
+    <div style="overflow-x:auto;">
+        <table align="center">
+            <tr *ngIf="!isTeam()">
+                <th id="imagecell"> </th>
+                <th *ngFor="let column of columnName;index as i" (click)="openKpi(column)">
+                    {{ column }}
+                </th>
+            </tr>
+            <tr *ngFor="let row of rows;index as i">
+                <th *ngIf="!isTeam()">
+                    <a [routerLink]="getDashboardLink(row.rowName)">{{row.rowName }}</a>
+                </th>
+                <th *ngIf="isTeam()">{{row.rowName }}</th>
+                <td *ngFor="let cell of row.rowCellData;index as j" [ngStyle]="getStyle(cell)" (mouseover)="displayScore(i,j)" (mouseout)="hideScore(i,j)">{{showScore[i][j]? cell.score : ''}}</td>
+            </tr>
+            <tr *ngIf="isTeam()">
+                <th id="imagecell"> </th>
+                <th *ngFor="let column of columnName;index as i" (click)="openKpi(column)">
+                    <span [matTooltip]="'Sonar Run Date :\n'+runDates[i]" matTooltipPosition="below" [matTooltipClass]="'my-tooltip'">{{ column }}</span>
+                </th>
+            </tr>
+        </table>
+    </div>
+</div>

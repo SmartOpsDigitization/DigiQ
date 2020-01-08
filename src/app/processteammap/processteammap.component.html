@@ -1,0 +1,51 @@
+<div style="background-color: aliceblue;">
+  <div style="margin-bottom: 5%;">
+    <app-checklistquestionanswer></app-checklistquestionanswer>
+  </div>
+  <div class="container">
+    <div style="margin-left: 10px">
+      <h1 style="text-align: center;"><u>Process Team Mapping</u></h1>
+      <h2 style="margin-top:50px;margin-left: 10px"> TEAMS</h2>
+      <div *ngFor="let i of allProcessTeamMapping ; let y = index">
+        <button type="button" class="collapsible" (click)="expand()">{{y+1}} - {{i.teamName}} <button
+            class="btn btn-info" style="margin-left:95%" (click)="openpopup(i.teamId)" data-toggle="modal"
+            data-target="#myModal1"><i class="fa fa-plus-square"></i></button></button>
+        <div class="content">
+          <table class="processesrow">
+            <tr *ngFor="let k of i.process">
+              <td style="height: 40px;">{{k.processName}}
+              </td><button class="btn btn-danger" style="background-color: #df5563;"
+                 (click)="onselectdelete(i.teamId,k.processId)"><i class='fas fa-trash'></i></button>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="myModal1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1>Add process</h1>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <select [(ngModel)]="selectedProcess" name="selectedProcess"
+              (change)="onProcessSelect()">
+              <option *ngFor="let i of allprocess" [value]="i.processId">
+                {{i.processName}}
+              </option>
+            </select>
+            <br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" (click)="onSaveTeamProcessMapping()">Submit</button>
+            <button type="button" class="btn btn-danger" style="background-color: #df5563;"
+              data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

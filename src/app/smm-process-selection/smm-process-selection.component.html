@@ -1,0 +1,186 @@
+<div style="background-color: aliceblue;">
+    <app-dashboard-header [header]="header"></app-dashboard-header>
+    <div style="margin-top: 5%;" id="datastyle">
+        <label id="aolnamelabel">AOL/COM</label>
+        <select [(ngModel)]="aolselected" (change)="onaolselect($event.target.value)">
+            <option value="none" selected="selected" disabled>Select AOL Name</option>
+            <option *ngFor="let i of aolnames; trackBy: trackByItems" [value]=i.aolName> {{i.aolName}}</option>
+        </select>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div id="datastyle">
+        <label id="accoutnamelabel">Account Name</label>
+        <select (change)="onaccountSelect($event.target.value)"
+            placeholder="Select Account">
+            <option value="none" selected="selected">Select Account Name</option>
+            <option *ngFor="let i of getaccountsforaolarray" [value]=i.accountId autocomplete="off"> {{i.accountName}}
+            </option>
+        </select>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <h2 style="margin-left:40%;margin-top:30px">Select Applicable Teams</h2>
+    <hr>
+
+
+
+    
+    <div *ngIf="canAddTeam" ng-app="ngpatternApp" ng-controller="ngpatternCtrl">
+        <form name="myForm" novalidate ng-submit="personForm.$valid &&sendForm()">
+            <div style="margin-left: 200px;margin-top:50px;cursor:pointer;" class="processbackground">
+                <strong *ngIf="errorMessage">{{errorMessage}}</strong>
+                <a  [class.disabled]=" disableFlag" type="button" class="btn btn-primary btn-lg" (click)="resetDataForModal()" data-toggle="modal" data-target="#myModal1">
+                    Add Team
+                    <i class="fa fa-plus-square"></i></a>
+
+                <div   class="modal" id="myModal1"  >
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1>Add Team</h1>
+                                <button type="button" class="close" data-dismiss="modal" >&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                    <div class="form-group">
+                                        <select placeholder="Select New Team " [(ngModel)]="selectedTeam" (change)="onTeamSelect()"
+                                            name="selectedTeam">
+                                            <option *ngFor="let team of teams ;  trackBy: trackByItems" [value]="team.teamName">
+                                                {{team.teamName}}
+                                            <option>
+                                        </select>
+                                        <br>
+
+                                        
+                                        <div *ngIf="!submitSmmProcessSelectionResponse">
+                                            <p>No Process is mapped against this team. Please select process</p>
+                                            <div class="form-group">
+                                                <select [(ngModel)]="selectedProcess" name="selectedProcess"
+                                                    (change)="onProcessSelect()" style="width: 50%;">
+                                                    <option *ngFor="let i of allprocess" [value]="i.processId">
+                                                        {{i.processName}}
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-info"  (click)="onTeamSubmit()" data-dismiss="modal">Submit</button>
+                                    <button type="button" class="btn btn-danger" style="background-color: #df5563;"
+                                        data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div *ngFor="let userdata of tempteamsobj ;  trackBy: trackByItems ; let y = index "
+                    style="margin-left: 50px;margin-top:10px">
+                    <div>
+                        <!-- <input type="checkbox"  class="form-check-input" id="x{{userdata.teamName}}"
+                            [value]="userdata.teamName" (change)="teamChecked($event, $event.target.value)"
+                            checked=true> -->
+                        <label>{{userdata.teamName}}</label>
+                     
+                        <button  type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2"
+                            style="margin-left: 3%;" (click)="addProcessToTeam(userdata.teamId)" id="button1">Add Process <i
+                                class="fa fa-plus-square"></i></button>
+                                <!-- <a [class.disabled]=" disableFlag" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2"
+                                style="margin-left: 3%;" (click)="addProcessToTeam(userdata.teamId)" >Add Process <i
+                                    class="fa fa-plus-square"></i></a>     -->
+                                <button  ngbTooltip="Will Delete this Team from the Account" placement="top" container="body"(click)="deleteTeamFromAccount(userdata.teamId)" style="margin-left: 20px; background-color: #df5563"
+              type="button" class="btn btn-danger" id="button2"><i class='fas fa-trash'></i></button>
+              <!-- <a [class.disabled]=" disableFlag" ngbTooltip="Will Delete this Team from the Account" placement="top" container="body"(click)="deleteTeamFromAccount(userdata.teamId)" style="margin-left: 20px; background-color: #df5563"
+              type="button" class="btn btn-danger" ><i class='fas fa-trash'></i></a> -->
+
+                        <div class="modal" id="myModal2">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1>Add Process</h1>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <label style="margin: 25px 40px 0 25px">Select Process</label>
+                                        <select [(ngModel)]="selectedProcess" name="selectedProcess"
+                                            (change)="mapTeamProcess($event.target.value)" style="width: 50%;">
+                                            <option *ngFor="let i of allprocess" [value]="i.processId">{{i.processName}}
+                                            </option>
+                                        </select>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-info"
+                                                (click)="mapTeamProcessSubmit()" data-dismiss="modal">Submit</button>
+                                            <button type="button" class="btn btn-danger"
+                                                style="background-color: #df5563;" data-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <table class="processesrow">
+                                <tr *ngFor="let k of userdata.process ; let y = index ;trackBy: trackByItems">
+                                    <td>Process {{y+1}}</td>
+                                    <td>{{k.processName}} <a [class.disabled]=" disableFlag" class="btn"
+                                             style="margin-left: 20px"
+                                            (click)="onselectdelete(k.accountTeamMappingId)"><i
+                                                class='fa fa-trash'></i></a></td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+                        <mat-form-field [floatLabel]="'never'" class="example-full-width">
+                            <input matInput placeholder="Enter SPOC Email" type="text"
+                                (keyup)="keyup($event , $event.target.value)" [matAutocomplete]="auto" type="email"
+                                id="txtSPOC{{userdata?.teamName}}" value="{{userdata.spoc}}"> 
+                            <mat-autocomplete #auto="matAutocomplete" id="txtSPOC{{userdata?.teamName}}"
+                                (optionSelected)="saveemail(userdata.teamId,$event.option.value)">
+                                <mat-option *ngFor="let result of presentVal" [value]="result">
+                                    {{ result }}
+                                </mat-option>
+                            </mat-autocomplete>
+                        </mat-form-field>
+
+
+                        <!-- <input id="txtReason{{userdata?.teamName}}" type="text"
+                            style="width:400px;margin-left:-3px;visibility:hidden;margin-bottom: 75px;"
+                            placeholder="Enter reason if not selected"
+                            (blur)="saveEntry(userdata.teamId,$event,$event.target.value)" /> -->
+                    </div>
+                </div>
+                <button  class="admin_button" (click)="onSubmit()">Submit</button>
+  
+                <!-- <a [class.disabled]=" disableFlag" type="button" class="btn btn-primary btn-lg" 
+                                style="margin-left: 3%;" (click)="onSubmit()" >Submit </a> -->
+            </div>
+        </form>
+    </div>
+    <app-footer></app-footer>
+</div> 
+

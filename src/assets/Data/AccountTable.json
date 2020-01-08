@@ -1,0 +1,455 @@
+[
+  {
+    "accountId":"1",
+    "accountName":"Account1",
+    "snapshots":[
+      {
+        "snapshotName":"04-05-18",
+        "dateRefreshedOn":"04-05-18",
+        "columnNames":[
+            "Estimation",
+            "Design & Review",
+            "Code Review",
+            "Unit Testing",
+            "Build",
+            "Defect Density"
+          ],
+        "rows":[
+         {
+          "rowName":"Team1",
+          "rowCellData":[
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":95
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":67
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":42
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+          ]
+         },
+         {
+          "rowName":"Team2",
+          "rowCellData":[
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":40
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":60
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+          ]
+         }
+        ] 
+     },
+     {
+        "snapshotName":"04-12-17",
+        "dateRefreshedOn":"04-12-17",
+        "columnNames":[
+           "Estimation",
+            "Design & Review",
+            "Code Review",
+            "Unit Testing",
+            "Build",
+            "Defect Density"
+          ],
+        "rows":[
+          
+         {
+          "rowName":"Team1",
+          "rowCellData":[
+                  {  
+                      "color":"#2596ed",
+                      "score":45
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":90
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+          ]
+         },
+         {
+          "rowName":"Team2",
+          "rowCellData":[
+                  {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":60
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":80
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+          ]
+         }
+        ]
+     }
+     ]
+  },
+    {
+    "accountId":"2",
+    "accountName":"Account2",
+    "snapshots":[
+      {
+        "snapshotName":"04-05-18",
+        "dateRefreshedOn":"04-05-18",
+        "columnNames":[
+            "Estimation",
+            "Design & Review",
+            "Code Review",
+            "Unit Testing",
+            "Build",
+            "Defect Density"
+          ],
+        "rows":[
+         {
+          "rowName":"Team3",
+          "rowCellData":[
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":95
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":67
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":42
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+          ]
+         },
+         {
+          "rowName":"Team4",
+          "rowCellData":[
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":40
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":60
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+          ]
+         }
+        ] 
+     },
+     {
+        "snapshotName":"04-12-17",
+        "dateRefreshedOn":"04-12-17",
+        "columnNames":[
+           "Estimation",
+            "Design & Review",
+            "Code Review",
+            "Unit Testing",
+            "Build",
+            "Defect Density"
+          ],
+        "rows":[
+          
+         {
+          "rowName":"Team3",
+          "rowCellData":[
+                  {  
+                      "color":"#2596ed",
+                      "score":45
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":90
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+          ]
+         },
+         {
+          "rowName":"Team4",
+          "rowCellData":[
+                  {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":60
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":80
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+          ]
+         }
+        ]
+     }
+     ]
+  },
+  {
+    "accountId":"3",
+    "accountName":"Account3",
+    "snapshots":[
+      {
+        "snapshotName":"02-04-18",
+        "dateRefreshedOn":"02-04-18",
+        "columnNames":[
+            "Estimation",
+            "Design & Review",
+            "Code Review",
+            "Unit Testing",
+            "Build",
+            "Defect Density"
+          ],
+        "rows":[
+         {
+          "rowName":"Team2",
+          "rowCellData":[
+          	        {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+          ]
+         },
+         {
+          "rowName":"Team3",
+          "rowCellData":[
+           {  
+                      "color":"#2596ed",
+                      "score":40
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":38
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+          ]
+         }
+        
+        ] 
+    },
+     {
+        "snapshotName":"01-01-18",
+        "dateRefreshedOn":"01-01-18",
+        "columnNames":[
+            "Estimation",
+            "Design & Review",
+            "Code Review",
+            "Unit Testing",
+            "Build",
+            "Defect Density"
+          ],
+        "rows":[
+         {
+          "rowName":"Team2",
+          "rowCellData":[
+          		   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"amdocs",
+                      "score":100
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":30
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+          ]
+         },
+         {
+          "rowName":"Team3",
+          "rowCellData":[
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#2596ed",
+                      "score":30
+                   },
+                   {  
+                      "color":"#69c64d",
+                      "score":80
+                   },
+              {
+                "color": "#808080",
+                "score": -1
+              },
+              {
+                "color": "#808080",
+                "score": -1
+              }
+          ]
+         }
+        ] 
+    }
+    ]
+  }
+]

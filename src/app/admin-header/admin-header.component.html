@@ -1,0 +1,31 @@
+
+<div class="dashboard-header">
+  <div class="logo-container">
+      <div class="image">
+        <a routerLink="/" ><img src="assets/Images/amdocs.png" id="logo"></a> 
+      </div>
+      <div class="nav-bar">
+        <a routerLink="/admin/line" >Line</a>
+        |
+        <a routerLink="/admin/account" >Account</a>|
+        <a routerLink="/admin/team" >Team</a>|
+		<a routerLink="/admin/pillar">Category</a>|
+		<a routerLink="/admin/kpi">KPI</a>
+      </div>
+  </div>
+  <div class="header-title-container">
+    <h1 class="top-header">Admin Panel</h1>
+  </div>
+  <div class="place-holder">
+  
+      <div class="home-logo">
+        <input id="submit-id" type="button" value="Admin Home" (click)="redirectAdmin()" /> 
+      </div>
+  </div>
+  <div class="guidelines">
+    <a routerLink="/admin/guidelines"  target="_blank">
+      <img src="assets/Images/help.png">
+    </a>
+  </div>
+</div>
+

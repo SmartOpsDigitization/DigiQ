@@ -1,0 +1,68 @@
+#imagecell {
+    background : url(/assets/Images/amdocs.png);
+ 
+    background-color:rgba(0,0,0);
+    background-repeat : no-repeat;
+    background-size:contain;
+    background-position: center;
+    height:70px;
+    font-size:30px;
+    border-radius: 15px;
+    border:2px solid #e60073
+}
+div{
+    min-width: 300px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+th{
+    border-radius: 15px;
+    background-color:black;
+    color : white;
+    font-size: 140%;
+    font-family:courier;
+    border:2px solid #e60073;
+    height:70px;
+    padding: 4px;
+    width:11vw;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+td{
+    border:2px solid black;
+    border-radius: 8px;
+    text-align:center;
+    color : black;
+    font-size: 20px;
+  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+td:hover {
+    background-color: #FFF842;
+    box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+    transition-delay: 0s;
+        transition-duration: 0.4s;
+        transition-property: all;
+    transition-timing-function: line;
+  }
+  .tableDash{
+    align-content: center;
+    margin-top: 2%;
+  }
+  a{
+      color:white;
+  }
+  ::ng-deep.my-tooltip {
+    height: auto;
+    width:auto  !important;
+    overflow: auto;
+    white-space: pre-line;
+    background-color:rgba(0, 0, 0, 0.658);;
+    font-size: 100%;
+    font-weight: 700;
+    padding: 5px;
+    color: white !important;
+    
+}

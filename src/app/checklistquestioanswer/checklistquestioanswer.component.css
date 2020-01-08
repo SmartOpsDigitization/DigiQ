@@ -1,0 +1,322 @@
+
+
+ 
+ .score, td{
+width: 300px;
+ }
+
+
+ .button1 {
+    background-color: #333147;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  .button1:hover {
+    opacity: 0.8;
+  }
+  
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #333147;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+
+  #customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr{background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    background-color: #333147;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 10px
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 60%;
+    width:50%;
+    background: white;
+    float: left;
+    margin-left: 20%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .checklistquestionanswer {
+    background-color:white;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: 7px solid black;
+    width: 95%;
+  }
+  
+  .checklistquestionanswer td, .checklistquestionanswer th {
+    border: 3px solid black;
+    padding: 10px;
+  }
+  
+  /* .checklistquestionanswer tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .checklistquestionanswer tr:hover {background-color: #ddd;}
+   */
+  .checklistquestionanswer th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+    /* background-color: #4CAF50; */
+    border-collapse: 7px solid black;
+    color: black;
+   
+  }
+  .scorerow {
+    background-color:white;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: 1px solid black;
+    width: 75%;
+  }
+  
+  .scorerow td, .scorerow th {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  
+  /* .checklistquestionanswer tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .checklistquestionanswer tr:hover {background-color: #ddd;}
+   */
+  .scorerow th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    /* background-color: #4CAF50; */
+    color: black;
+  }
+
+  .button {
+    background-color: #333147; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 30%;
+  }
+  .button1 {
+    background-color: #333147; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  
+
+
+  .button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+    
+  .sticky td, .sticky th {
+    border: 3px solid black;
+    padding: 10px;
+    position: relative;
+    
+  }
+  
+
+.collapsible {
+  background-color:linear-gradient(to right, #EAB330, rgb(241, 135, 206) );
+  /* background-color:(255, 255, 255); */
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 75%;
+  border: 1px solid black;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #999;
+}
+
+.content {
+  padding: 0 0px;
+  display: none;
+  overflow: hidden;
+  /* background-color: #f1f1f1; */
+  background:linear-gradient(to right, #EAB330, rgb(241, 135, 206) );
+  width: 95%;
+}
+
+/* HEADERS */
+/* HM879b */
+
+.dashboard-header{
+  height:13vh;
+  width:100%;
+background-color:black;
+}
+
+.logo-container{
+  height: 100%;
+  width:20%;
+  float:left;
+  align-content: center;
+  
+}
+.header-title-container{
+  height:100%;
+  width:60%;
+  float:left;
+  overflow-inline: unset;
+}
+.place-holder{
+  height:100%;
+  width:20%;
+  float:left;
+}
+
+.top-header{
+  font-weight: bold;
+  text-align: center;
+  font-size: 6vh;
+  font-family: sans-serif;
+color: #fff;
+padding-bottom: 0;
+}
+
+#logo {
+ height:100%;
+ width:auto;
+}
+.image{
+  width: 10vh;
+  height:10vh;
+  align-self: center;
+  vertical-align: middle;
+  margin-left: 10%;
+  margin-top:1vh;
+  padding: 2px;
+ 
+}
+
+a{
+  color:purple;
+}
+
+.home-logo{
+  float: right;
+  padding: 2.5vh;
+  vertical-align: -webkit-baseline-middle;
+}
+#home{
+  height: 8vh;
+  width: auto;
+  vertical-align: -webkit-baseline-middle;
+}
+
+
+  

@@ -1,0 +1,9 @@
+<div class="pop-up-container">
+  <mat-dialog-content>
+    {{data.responseMessage}}
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button id="ok" [mat-dialog-close]=true>Yes</button>
+    <button mat-button id="cancel" [mat-dialog-close]=false cdkFocusInitial>Cancel</button>
+  </mat-dialog-actions>
+</div>

@@ -1,0 +1,20 @@
+.submit{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 45%;
+}
+.container h4{
+    text-align: center;
+    font-style: italic;
+}
+.container select{
+    width:80%;
+    font-style: normal;
+}
+.container textarea{
+    width:80%;
+    font-style: normal;
+}
+.container option{
+    font-style: normal;
+}

@@ -1,0 +1,9 @@
+<div class="parent-div">
+    <div class="second-div">
+        <h2>Snapshot:</h2>
+        <select class="selectorTag2"  [(ngModel)]="selectedSnapshotIndex" (change)="onSnapshotSelect()">
+            <option value=-1 disabled hidden>Select Snapshot</option>
+            <option *ngFor="let snapshot of adm;index as i" [value]="i">{{snapshot.snapshotName}}</option>
+        </select>      
+    </div>
+</div>

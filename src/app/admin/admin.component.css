@@ -1,0 +1,157 @@
+
+
+.account-dashboard-header{
+    height:15%;
+    width:100%;
+    background-color:grey;
+}
+.logo-container{
+    height: 100%;
+    width:20%;
+    float:left;
+    align-content: center;
+    
+}
+.header-title-container{
+    height:100%;
+    width:60%;
+    float:left;
+    overflow-inline: unset;
+}
+.place-holder{
+    height:100%;
+    width:20%;
+    float:left;
+}
+.body-container{
+    margin-top:1%;
+    width:100%;
+    height:80%;
+  
+}
+.row{
+    width:100%;
+    height:50%;
+}
+.column{
+    height:100%;
+    width:50%;
+    float:left;
+    
+
+}
+#adm{
+    background-color: skyblue;
+}
+#line{
+    background-color:yellow;
+}
+#account{
+    background-color:grey;  
+}
+#team{
+    background-color: orangered;
+}
+
+
+
+.top-header{
+    font-weight: bold;
+    text-align: center;
+    font-size: 6vh;
+    font-family: sans-serif;
+	color: #fff;
+}
+
+.logo {
+   height:100%;
+   width:auto;
+
+   
+}
+
+.image{
+    border:0.2vh solid chocolate;
+    border-radius: 1.5vh;
+    width: 10vh;
+    height:10vh;
+    align-self: center;
+    vertical-align: middle;
+    margin-left: 10%;
+    margin-top:1vh;
+    padding: 2px;
+    
+}
+
+a{
+    color:purple;
+}
+
+
+
+
+
+
+/*******************/
+
+.admin-panel-container{
+    
+    height: 83vh;
+    
+    background-color: #35ffda;
+   
+}
+
+.updiv
+{
+width:100%;
+height:50%;
+}
+.downdiv
+{
+    width:100%;
+    height:50%;
+}
+.left-div
+{
+width:33%;
+height:100%;
+float: left;
+}
+.middle-div
+{
+width:34%;
+height:100%;
+float: left;
+}
+.right-div
+{
+width:33%;
+height:100%;
+float: left;
+}
+
+.link-div{
+    margin-top: 13vh;
+    font-size: 6vh;
+    font-family:courier;
+    text-align: center;
+    vertical-align: center;
+}
+.row{
+    
+    width: 100vw;
+}
+
+.column{
+    margin-top: 18vh;
+    width: 12vw;
+    margin-left: 6vw;
+   
+
+    height: auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+}

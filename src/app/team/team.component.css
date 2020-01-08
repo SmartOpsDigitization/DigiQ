@@ -1,0 +1,263 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    height: 300px;
+    width:250px;
+    background: white;
+    float: left;
+    margin-left: 20px
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .button {
+    background-color: #333147; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+
+  .modal {
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-left: 400px;
+    left: 0;
+    top: 0px;
+    width: 50%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    padding-top: 300px;
+  
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  .modal1-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+  }
+ 
+  .button1 {
+    background-color: #333147;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  .button1:hover {
+    opacity: 0.8;
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #333147;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    background-color: #333147;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 10px
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+  .tabbutton{
+    background-color: #333147; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.teamtable {
+  background:linear-gradient(to right, #EAB330, rgb(241, 135, 206) );
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: 5px solid black;
+  width: 75%;
+  background-color: white;
+}
+
+.teamtable td, .teamtable th {
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+/* .checklistquestionanswer tr:nth-child(even){background-color: #f2f2f2;}
+
+.checklistquestionanswer tr:hover {background-color: #ddd;}
+ */
+.teamtable th {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  /* background-color: #4CAF50; */
+  color: black;
+}
+
+/* HEADERS */
+/* HM879b */
+
+.dashboard-header{
+  height:13vh;
+  width:100%;
+background-color:black;
+}
+
+.logo-container{
+  height: 100%;
+  width:20%;
+  float:left;
+  align-content: center;
+  
+}
+.header-title-container{
+  height:100%;
+  width:60%;
+  float:left;
+  overflow-inline: unset;
+}
+.place-holder{
+  height:100%;
+  width:20%;
+  float:left;
+}
+
+.top-header{
+  font-weight: bold;
+  text-align: center;
+  font-size: 6vh;
+  font-family: sans-serif;
+color: #fff;
+padding-bottom: 0;
+}
+
+#logo {
+ height:100%;
+ width:auto;
+}
+.image{
+  width: 10vh;
+  height:10vh;
+  align-self: center;
+  vertical-align: middle;
+  margin-left: 10%;
+  margin-top:1vh;
+  padding: 2px;
+ 
+}
+
+a{
+  color:purple;
+}
+
+.home-logo{
+  float: right;
+  padding: 2.5vh;
+  vertical-align: -webkit-baseline-middle;
+}
+#home{
+  height: 8vh;
+  width: auto;
+  vertical-align: -webkit-baseline-middle;
+}

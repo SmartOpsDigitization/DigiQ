@@ -1,0 +1,7 @@
+app-legend-team{
+    z-index: 100;
+    float: right;
+    position: absolute;
+    top: 75vh;
+    right: 1vw;
+}

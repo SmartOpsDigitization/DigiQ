@@ -1,0 +1,69 @@
+<div style="margin-bottom: 5%;">
+  <app-checklistquestionanswer [header]="header"></app-checklistquestionanswer>
+</div>
+<div style="background-color: aliceblue;">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <div class="container">
+    <button ngDefaultControl [(ngModel)]="teamname" (click)="openpopup()" type="button" class="btn btn-info">Add
+      Team</button>
+    <table style="background: #e9ecef;" style="margin-top: 9Px;" class="table table-hover  table-striped">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Team Name</th>
+          <th>Action Items</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of teams ; let y=index">
+          <td>{{y+1}}</td>
+          <td>{{i.teamName}}</td>
+          <td>
+            <button (click)="onselectmodify(i.teamName,i.teamId)" style="margin-left: 20px" type="button"
+              class="btn btn-secondary"><i class='fas fa-pencil-alt'></i></button>
+            <button (click)="onselectdelete(i.teamId)" style="margin-left: 20px; background-color: #df5563"
+              type="button" class="btn btn-danger"><i class='fas fa-trash'></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="popup" class="modal">
+    <form class="modal-content animate">
+
+      <div class="container">
+        <label for="uname"><b>Team Name</b></label>
+        <input type="text" [(ngModel)]="teamname" placeholder="Enter Team Name" name="account" required>
+
+        <button class="button1" type="submit" >Submit</button>
+        <button type="button"  class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+  <div *ngIf="popupupdate" class="modal">
+    <form class="modal-content animate">
+      <div class="container">
+        <label for="uname"><b>Team Name</b></label>
+        <input type="text" [(ngModel)]="modifyteamname" placeholder="Enter Team Name" name="account" required>
+
+        <button class="button1" type="submit" >Update</button>
+        <button type="button"  class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+  <div *ngIf="confirmdelete" class="modal">
+    <form class="modal1-content animate">
+      <div class="container" style="align-content: center">
+        <span>
+          <br style="margin-top: 10px">
+          <span>Are you sure ?</span>
+          <button style="width: 50px;height:30px;margin-left: 10px;background-color: #333147;border: none;color: white;"
+            (click)="Deleteemployee()">Yes</button>
+          <button style="width: 50px;height:30px;margin-left: 10px;background-color: #333147;border: none;color: white;"
+            (click)="confirmdelete=false">No</button>
+        </span>
+      </div>
+    </form>
+  </div>
+</div>

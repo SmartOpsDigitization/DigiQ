@@ -1,0 +1,26 @@
+<div class="tableDash">
+    <div style="overflow-x:auto;">
+        <table align="center">
+            <tr>
+                <ng-container *ngFor="let column of columnNames">
+                    <th *ngIf="column=='Account Name'"> <a routerLink="/adm/account" >{{column}}</a></th>
+                    <th *ngIf="column=='Line Name'"> <a routerLink="/adm/line" >{{column}}</a></th>
+                    <th *ngIf="column!='Line Name'&&column!='Account Name'">{{column}}</th>
+                </ng-container>
+            </tr>
+            <tr *ngFor="let row of rows;index as i">
+                <td>
+                    <a [routerLink]="getTeamLink(row.rowName)" >{{row.rowName }}</a>
+                </td>
+                <ng-container *ngFor="let cell of row.rowCellData;index as j">
+                    <td *ngIf="isHyperLink(j+1)">
+                        <a [routerLink]="getHyperLink(row.rowName,cell.cellData,j+1)" >{{cell.cellData}}</a>
+                    </td>
+                    <td *ngIf="!isHyperLink(j+1)&&!cell.isPillarScore">{{cell.cellData}}</td>
+                    <td *ngIf="!isHyperLink(j+1)&&cell.isPillarScore" [ngStyle]="getStyle(cell)" class="animate" (mouseover)="displayScore(i,j)"
+                        (mouseout)="hideScore(i,j)">{{showScore[i][j]? cell.score : ''}}</td>
+                </ng-container>
+            </tr>
+        </table>
+    </div>
+</div>

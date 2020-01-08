@@ -1,0 +1,19 @@
+<app-dashboard-header [header]="dashboardType"></app-dashboard-header>
+<div>
+    <app-path-bar [paths]="paths"></app-path-bar>
+</div>
+<div *ngIf="teamNamesLoaded&&incomingTeamIndexLoaded">
+    <app-team-dashboard-table-selector [teamNames]="teamNames" [incomingTeamIndex]="incomingTeamIndex" (TeamSelectorEvent)="setLatestTeamDashboardTable($event)"
+    (LoaderEvent)="startLoader()"   (ReleaseSelectorEvent)="setLatestReleaseDashboardTable($event)" (SnapshotSelectorEvent)="setDashboardTable($event)"></app-team-dashboard-table-selector>
+</div>
+
+<div class="container" *ngIf="displayDashboardTable">
+    <app-dash-board-table [data]="snapshotToBeDisplayed" [dashboardType]="dashboardType" ></app-dash-board-table>
+    <app-legend-team></app-legend-team>
+</div>
+<div *ngIf="!displayDashboardTable&&notFound">
+    <app-data-not-found></app-data-not-found>
+</div>
+<div *ngIf="displayLoader">
+        <app-loading></app-loading>
+</div>

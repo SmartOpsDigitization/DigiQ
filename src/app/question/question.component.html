@@ -1,0 +1,102 @@
+<div style="background-color: aliceblue;">
+<div style="margin-bottom: 5%;"> 
+  <app-checklistquestionanswer [header]="header"></app-checklistquestionanswer>
+</div>
+<div class="modal" id="myModal1">
+   <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Add Account</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <label for="uname"><b>Acccount Name</b></label>
+          <input type="text" [(ngModel)]="accountname" placeholder="Enter Account Name" name="account" required>
+          <span>
+            <label for="psw" style="margin-right: 30px"><b>AOL Name</b></label>
+            <select [(ngModel)]="aolname" placeholder="Select AOL Name"
+              style="width: 435px;height: 50px;margin-bottom: 3%;" name="aol">
+              <option *ngFor="let j of getaccount" [value]="j.aolName">{{j.aolName}}</option>
+            </select>
+          </span>
+          <br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" (click)="onsubmit()">Submit</button>
+          <button type="button" class="btn btn-danger" style="background-color: #df5563;" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container" >
+    <button type="button" class="btn btn-info" style=" margin-top: 1%;" data-toggle="modal"
+    data-target="#myModal1">
+    Add Account
+  </button>
+    <table style="background: #e9ecef;" style="margin-top: 10px;" class="table table-hover  table-striped">
+    <thead>
+  <tr>
+    <th>S.No</th>
+    <th>Account Name</th>
+    <th>AOL Name</th>
+    <th>Action Items</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let i of getaccount ; let y=index">
+    <td>{{y+1}}</td>
+    <td>{{i.accountName}}</td>
+    <td style="color: blue">{{i.aolName}}</td>
+    <td>
+        
+      <button style="margin-left: 20px" type="button" class="btn btn-secondary" (click)="onselectmodify(i.accountId,i.accountName,i.aolName)" 
+       data-toggle="modal" data-target="#myModal2"><i class='fas fa-pencil-alt'></i></button>
+
+      <button style="margin-left: 20px;background-color: #df5563;" type="button" class="btn btn-danger"  (click)="onselectdelete(i.accountId)"><i class='fas fa-trash'></i>
+      </button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<div class="modal" id="myModal2">
+   <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Edit Account</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <label for="uname"><b>Acccount Name</b></label>
+          <input type="text" [(ngModel)]="updatedaccountname" placeholder="Enter Account Name" name="account" required>
+          <label for="psw"><b>AOL Name</b></label>
+          <input type="text" placeholder="Enter AOL Name" [(ngModel)]="updatedaolname" name="aol" required>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" (click)="onupdate()">Update</button>
+          <button type="button" class="btn btn-danger" style="background-color: #df5563;" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="confirmdelete" class="modal">
+
+  <form class="modal1-content animate">
+
+    <div class="container" style="align-content: center">
+      <span>
+        <br style="margin-top: 10px">
+        <span>Are you sure ?</span>
+        <button style="width: 50px;height:30px;margin-left: 10px;background-color: #333147;border: none;color: white;"
+          >Yes</button>
+        <button style="width: 50px;height:30px;margin-left: 10px;background-color: #333147;border: none;color: white;"
+          (click)="confirmdelete=false">No</button>
+      </span>
+    </div>
+  </form>
+</div>
+</div>
+<app-footer></app-footer>

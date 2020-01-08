@@ -1,0 +1,113 @@
+<!--
+<app-dashboard-header>
+</app-dashboard-header>
+-->
+<!-- <app-admin-header></app-admin-header>
+
+  <div class="parent-div">
+  
+
+
+
+        <div class="right-div">
+
+
+
+
+                <div class="team-table-div">
+                  <form class="form-style-1">
+                   
+                       <table>
+                            <thead class="row">
+                                <td class="col-select">  </td>
+                                <td class="col" id="table-header">Team Name</td>
+                                <td class="col" id="table-header">Team Lead Name</td>
+                                <td class="col" id="table-header">Line Name</td>
+                                <td class="col" id="table-header">Account Name</td>
+                                <td class="col" id="table-header">Team Details</td>
+                            </thead>
+                                <tr class="row" *ngFor=" let team of teams , let i = index">
+                                    <td class="col-select"><input type="radio" name="lineRadio" (change)="onSelectionIndex(i)"></td>
+                                    <td class="col">{{teams[i].teamName}}</td>
+                                    <td class="col">{{teams[i].teamLeadName+" "}}</td>
+                                    <td class="col">{{teams[i].lineName+" "}}</td>
+                                    <td class="col">{{teams[i].accountName+" "}}</td>
+                                    <td class="col">{{teams[i].teamDetails+" "}}</td>
+                                </tr>
+                            </table>
+
+                       
+                         <br><br>
+                         <div class="button-div">
+                            <div class="button-div-left">
+                                <input id="submit-id" type="button" value="Modify Team" (click)=modifyTeam()/>
+                            </div>   
+                            <div class="button-div-middle">
+                                    <input id="submit-id" type="Reset" value="Reset" (click)=onResetTeamSelection()/>
+                                    <input id="submit-id" type="button" value="config" (click)=onTeamConfig()/>
+                            </div>
+                            <div class="button-div-right">
+                                <input id="submit-id" type="button" value="Delete Team" (click)=deleteTeam() />           
+                            </div>
+                          </div>
+                      </form> 
+                  </div>
+              </div>
+      <div class="left-div">
+     
+          <form (ngSubmit)="onSubmit()">
+              <ul class="form-style-1">
+                  <li>
+                      <label class="label-css"> Team Name <span class="required">*</span></label>
+                      <input type="text"  name="teamName" class="field-long" [(ngModel)]="team.teamName" [disabled]="teamNameDisabled"/>
+                  </li>
+                  <li>
+                          <label class="label-css"> Team Leader Name <span class="required">*</span></label>
+                          <input type="text" name="teamLeadName" class="field-long" [(ngModel)]="team.teamLeadName" />
+                  </li>
+                  <br>
+                  
+                  <li>
+                          <label class="label-css" >Line Name <span class="required">*</span></label>
+                                <select name="field4" class="field-select"  name="lineName" [(ngModel)]="team.lineName" >
+                                    <option *ngFor='let lineName of lineNames ;index as i' [value]="lineName">
+                                    {{lineName}}
+                                    </option>
+                                </select>
+                  </li>
+                  
+ 
+
+
+
+                  <br>
+                  <li>
+                          <label class="label-css" >Account Name <span class="required">*</span></label>
+                          <select name="field4" class="field-select"  name="accountName" [(ngModel)]="team.accountName">
+                                <option *ngFor='let accountName of accountNames ;index as i' [value]="accountName">
+                                {{accountName}}
+                                </option>
+                            </select>
+                  </li>
+                  <br>
+                  <li>
+                      <label class="label-css">Team Details <span class="required">*</span></label>
+                      <textarea name="teamDetails" id="field5" class="field-long field-textarea" [(ngModel)]="team.teamDetails"></textarea>
+                  </li>
+                  <br>
+                  <li>
+                      <input id="submit-id" type="reset" value="Reset" (click)=onReset()/>
+                      <input id="submit-id" type="submit" value={{formButton}} />
+                  </li>
+              </ul>
+
+
+              
+              </form>
+     
+      </div>
+       
+    
+    
+    </div>
+    -->

@@ -1,0 +1,100 @@
+<!--
+<app-dashboard-header>
+</app-dashboard-header>
+-->
+<app-admin-header></app-admin-header>
+
+<div class="parent-div">
+
+
+        <div class="right-div">
+                <H1 class="team-detail-header">Accounts</H1>
+                <hr>
+                <div class="team-table-div">
+                    <form class="form-style-1">
+        
+                        <table>
+                            <thead class="row">
+                                <td class="col-select"></td>
+                                <td class="col" id="table-header">Account Name</td>
+                                <td class="col" id="table-header">Line Name</td>
+                                <!--      <td class="col" id="table-header">LM Name</td>
+                            *ngFor=" let lname of accountDetailIndex, let j = index"
+                          -->
+                            </thead>
+                        </table>
+        
+                        <table>
+                            <tr class="row" *ngFor=" let acc of accounts , let i = index">
+                                <td class="col-select">
+                                    <input type="radio" name="lineRadio" (change)="onSelectionIndex(i)">
+                                </td>
+                                <td class="col">{{accounts[i].accountName}}</td>
+                                <td class="col">{{accounts[i].lineNames+" "}}</td>
+                            </tr>
+                        </table>
+        
+                        <br>
+                        <br>
+                        <div class="button-div">
+                            <div class="button-div-left">
+                                <input id="submit-id" type="button" value="Modify Account" (click)="modifyAccount()" />
+                            </div>
+                            <div class="button-div-middle">
+                                    <input id="submit-id" type="reset" value="Reset" (click)="onResetRight()" />    
+                            </div>
+                            <div class="button-div-right">
+                                <input id="submit-id" type="button" value="Delete Account" (click)="deleteAccount()" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+    <div class="left-div">
+            <H1 class="team-detail-header">{{formButtonName}}</H1>
+            <hr>
+        <form (ngSubmit)="onSubmit()">
+            <ul class="form-style-1">
+                <li>
+                    <label class="label-css"> Account Name
+                        <span class="required">*</span>
+                    </label>
+                    <input type="text" name="accountName" class="field-long" [(ngModel)]="account.accountName" [disabled]="accountNameDisabled" />
+                </li>
+                <br>
+                <li>
+                    <label class="label-css">Line Name
+                        <span class="required">*</span>
+                    </label>
+
+                    <br>
+                    <label class="checkbox-container" *ngFor=" let lineName of lineNames;index as i">
+                        {{lineName}}
+                        <input type="checkbox" [(ngModel)]="isSelected[i]" name="{{lineName}}" >
+                        <span class="checkmark"></span>
+                    </label>
+
+                </li>
+                <br>
+                <li>
+                    <label class="label-css">Account Details
+                        
+                    </label>
+                    <textarea name="accountDetails" id="field5" class="field-long field-textarea" [(ngModel)]="account.accountDetails"></textarea>
+                </li>
+                <br>
+                <li>
+                   <input id="submit-id" class="right-div-button1" type="button" (click)="onReset()" value="Reset" />
+                    <input id="submit-id" class="right-div-button2"  type="submit" value={{formButtonName}} />
+                </li>
+            </ul>
+
+
+
+        </form>
+
+    </div>
+
+
+  </div>

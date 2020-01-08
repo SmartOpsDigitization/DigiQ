@@ -1,0 +1,122 @@
+<!-- <div style="background-color: aliceblue;">
+        <div  style="margin-bottom:2%">
+                <app-dashboard-header [header]="header"></app-dashboard-header>
+        </div>
+
+        <div class="container">
+                <div *ngIf="buttonvar"><button class="btn btn-info btn-lg"   [routerLink]="['/ssmprocess']">Account
+                                Setup</button>
+                </div>
+                <div *ngIf="buttonvar1"><button class="btn btn-info btn-lg" [routerLink]="['/superadmin']">Super Admin</button>
+                </div>
+                <br>
+                <div style="margin-left: 2%; color: teal;">
+                        <ul ><b>The below scores represents the minimun, maximum and average score secured by the teams under mention account for the respective Quatrter.
+                                <li > Min score represnts the team scoring least under that account.</li>
+                                <li >Max score represents the team scoring most under that account.</li>
+                                <li >Avg is the average score of all the teams under that account.</li> </b>             
+                        </ul>
+                </div>
+                <br>
+               
+                <table *ngIf="!buttonvar2" style="background-color: #575859; margin-top: 2%;"
+                        class="table table-hover  table-dark table-striped">
+                        
+                        <table *ngIf="!buttonvar2" style="margin-top:200px;margin-left:60px;height: 50%;width: 70%;"  id="customers" >
+                        <thead>
+                                <tr>
+                                        <th rowspan="2" style="font-size: 25px;">Accounts</th>
+                                        <th><a style="margin-left: 40%;">Q1--Scores</a></th>
+                                        <th rowspan="2"> <a style="margin-left: 30%; font-size: 22px;">View Responses</a></th>
+                                </tr>
+                                <tr>
+                                        <td>Min</td>
+                                        <td>Max</td>
+                                        <td ngbTooltip="Average score of all teams within the respective account. Click on the score to view breakdown" placement="top" container="body" style="text-align: center;">Avg</td>
+                                </tr>
+                        </thead>
+                        <tbody>
+                                <tr *ngFor="let i of displayScoreArray ; let y=index ">
+                                        <td>{{i.accountName}}</td>
+                                        <td>{{i.quarterWiseScore[0].avgScore}}</td>
+                                        <td>{{i.quarterWiseScore[0].avgScore}}</td>
+                                        <td [routerLink]="['/superadmin']">{{i.quarterWiseScore[0].avgScore}}</td>
+                                        <td>
+                                                <button style="margin-left: 50%;" id="i.accountId" type="button"
+                                                        class="btn btn-info" [value]="i.accountId"
+                                                        (click)="viewsubmittedresponses(i.accountId)">
+                                                        <i class='fas fa-eye'></i>
+                                                </button>
+                                        </td>
+                                </tr>
+                        </tbody>
+                </table>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+        </div>
+</div>
+<app-footer></app-footer> -->
+
+
+<!-- ============================================================= -->
+
+<div style="background-color: aliceblue;">
+        <div  style="margin-bottom:2%">
+                <app-dashboard-header [header]="header"></app-dashboard-header>
+        </div>
+
+        <div class="container">
+                <div *ngIf="buttonvar"><button class="btn btn-info btn-lg"   [routerLink]="['/ssmprocess']">Account
+                                Setup</button>
+                </div>
+                <div *ngIf="buttonvar1"><button class="btn btn-info btn-lg" [routerLink]="['/superadmin']">Super Admin</button>
+                </div>
+                <br>
+              
+                <br>
+               
+                <table  style="background-color: #575859; margin-top: 2%; width: 100%;"
+                        class="table table-hover  table-dark table-striped">
+                        
+                        <thead>
+                                <tr>
+                                        <th rowspan="3" style="font-size: 25px;">Accounts</th>
+                                        <th style="text-align: center;" colspan="2">FY18-19 Scores</th>
+                                        <th style="text-align: center;"colspan="2">FY19-20 Scores</th>
+                                        <!-- <th rowspan="2"> <a style="margin-left: 30%; font-size: 22px;">View Responses</a></th> -->
+                                </tr>
+                                <tr>
+                                        
+                                        <td style="text-align: center;">Q3</td>
+                                        <td style="text-align: center;">Q4 </td>
+                                        <td style="text-align: center;">Q1</td>
+                                        <td style="text-align: center;">Q2</td>
+                                </tr>
+                                <tr>
+                                
+                                        <td></td>
+                                        <td ngbTooltip="Average score of all teams within the respective account. Click on the score to view breakdown" placement="top" container="body" style="text-align: right;">Average Score </td>
+                                        <td></td>
+                                        <td></td>
+                                </tr>
+                        </thead>
+                        <tbody>
+                                <tr *ngFor="let i of displayScoreArray ; let y=index ">
+                                        <td >{{i.accountName}}</td>
+                                        <td style="text-align: center;">0</td>
+                                        <td style="text-align: center;">0</td>
+                                        <td style="text-align: center;">0</td>
+                                        <td style="text-align: center;" (click)="viewsubmittedresponses(i.accountId)" id="i.accountId" class="pointer" ngbTooltip="View responses and Score breakdown" placement="top" container="body">{{i.quarterWiseScore[0].avgScore}}</td>
+                                        <!-- <td>
+                                                <button style="margin-left: 50%;" id="i.accountId" type="button"
+                                                        class="btn btn-info" [value]="i.accountId"
+                                                        (click)="viewsubmittedresponses(i.accountId)">
+                                                        <i class='fas fa-eye'></i>
+                                                </button>
+                                        </td> -->
+                                </tr>
+                        </tbody>
+                </table>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+        </div>
+</div>
+<app-footer></app-footer>

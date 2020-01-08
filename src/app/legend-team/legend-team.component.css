@@ -1,0 +1,53 @@
+.legend{
+    
+    background-color:rgba(0, 0, 0, 0.658);
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 20vh;
+    width: 15vw;
+
+}
+
+#col-1{
+    background-image: url("../../assets/Images/amdocs_legend_color.png");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  #col-2{
+    background-color:green;
+  }
+  #col-3{
+    background-color:yellow;
+  }
+  #col-4{
+    background-color:red;
+  }
+  
+  
+  .legend-tr-css{
+    width:100%;
+    height:25%;
+    padding: 2px;
+  }
+  
+  .legend-td-css{
+    font-size:100%;
+    padding: 2px;
+    
+    width:auto;
+  }
+  .legend-table{
+    padding: 5px;
+    color:white;
+    height:100%;
+    width:100%;
+  }
+  .legend-header-css{
+    padding:1%;
+    padding: 2px;
+    font-weight:bold;
+    font-size:100%;
+  }
+  

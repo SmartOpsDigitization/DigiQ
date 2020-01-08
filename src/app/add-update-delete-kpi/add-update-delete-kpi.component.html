@@ -1,0 +1,105 @@
+<app-admin-header></app-admin-header>
+
+
+<div class="parent-div">
+
+        <div class="left-div">
+		<H1 class="team-detail-header">{{formButtonName}} </H1>
+            <hr>
+        <form (ngSubmit)="onSubmit()">
+            <ul class="form-style-1"> 
+                <br>
+				<li>
+                    <label class="label-css">Source: <span class="required">*</span>
+                    </label> 
+					<select name="Source">
+							<option value="sonar">Sonar</option>
+					</select>
+                 </li> 
+				 <li>
+                    <label class="label-css" >Pillar: <span class="required">*</span>
+                    </label> 
+					<!-- <select [(ngModel)]="selectedPillar" #pillarSel (change)="onChangepillar(pillarSel.value)" name="Pillars" >
+							<option *ngFor=" let pillar of pillars ;index as i" [value]="pillar.pillarId" [selected]="option === selectedOption">{{pillar.pillarName}}</option>
+					</select> -->
+                 </li>
+				 <li>
+                    <label class="label-css" >Levels: <span class="required">*</span>
+                    </label> 
+					<!-- <select [(ngModel)]="selectedLevel" #levelSel (change)="onChangeLevel(levelSel.value)" name="Levels" >
+							<option *ngFor=" let level of levels ;index as i" value="{{level.levelId}}" [selected]="option === selectedOption">{{level.levelName}}</option>
+					</select> -->
+                 </li>
+				<li>
+                    <label class="label-css">Details : <span class="required">*</span>
+                    </label>
+                    <textarea name="form_expressionKpiDetails" class="field-long field-textarea" [(ngModel)]="expression.kpiDetails" required=true></textarea>
+                </li>
+                <li>
+                    <label class="label-css">Score : <span class="required">*</span>
+					</label>
+					<textarea name="form_expressionScore" class="field-long field-textarea" [(ngModel)]="expression.kpiScore" required=true></textarea>
+                    
+                </li> 
+				<li>
+                    <label class="label-css">Expression: <span class="required">*</span> <a target="_blank" href="#" title="( sysDate - sonarRunDate < 2 ) AND ( NOT ( ( blocker_violations - blocker_violations_baseline = 0.0 ) AND ( critical_violations - critical_violations_baseline = 0.0 ) AND ( major_violations - major_violations_baseline <= 3.0 ) ) )"><img src="https://shots.jotform.com/kade/Screenshots/blue_question_mark.png" height="13px"/></a>
+                    </label> 
+                    <textarea name="form_expressionName" class="field-long field-textarea" rows="8" cols="50" [(ngModel)]="expression.kpiExpression" required=true></textarea>
+                </li> 
+                <br>
+                <li> 
+                            <input id="submit-id" type="button" class="right-div-button1" value="Reset" (click)=onReset()/> 
+                            <input id="submit-id" type="submit" class="right-div-button1" value="Submit" /> 
+                </li>
+            </ul> 
+	</form> 
+    </div>
+	
+	<div class="right-div">
+            <H1 class="team-detail-header">Existing KPI</H1>
+            <hr>
+  <!--navigation-->
+  
+  <!-- -->
+      <div class="team-table-div">
+
+        <form class="form-style-2" >
+          
+            <table>
+                <tr class="row">
+                    <td class="col-select"></td>
+						<td class="col" align="left" id="table-header">Pillar  </td>
+				 		<td class="col" id="table-header">Level</td> 
+						<td class="col" id="table-header">Name</td>   
+						<td class="col" id="table-header">Score</td>  						
+                </tr>     
+                    <tr  class="row" *ngFor=" let expression of expressions ;index as i">
+                        <td class="col-select"><input  type="radio" name="lineRadio" (change)="onSelectionIndex(i)"></td>
+                        <td class="col">{{expression.kpiPillar}}</td>   
+						<td class="col">{{expression.kpiLevel}}</td>   						
+                        <td class="col">{{expression.kpiDetails}}</td> 
+						<td class="col">{{expression.kpiScore}}</td>   	
+                    </tr>
+                
+             </table>  
+            </form> 
+			 <br><br>
+               <div class="button-div">
+                  <div class="button-div-left">
+                      <input id="submit-id" type="button" value="Modify" (click)="OnModifyExpression()" />
+                  </div>   
+                  <!-- <div class="button-div-middle">      
+                    <input id="submit-id" type="reset"  value="Reset" (click)="onResetRight()">
+                 </div> -->
+                  <div class="button-div-right">
+                      <input id="submit-id" type="button" value="Delete" (click)="OnDeleteExpression()"/>           
+                  </div>
+                </div>
+        </div>
+    </div>
+	
+
+   
+  
+  </div>
+ 
